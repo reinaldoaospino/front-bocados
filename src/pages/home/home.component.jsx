@@ -1,9 +1,10 @@
 import React from "react";
+import  Header  from "../../components/header/header.component";
 import { HomeContainer,Message } from "./home.styles";
 
 const HomePage = () => (
   <HomeContainer>
-    <Message>This the home Page</Message>
+    <Header></Header>
   </HomeContainer>
 );
 
