@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ImagesWrap = styled.div`
   height: 700px;
+  @media (max-width: 600px) {
+    height: 610px;
+  }
 `;
 
 export const Imagen1 = styled.div`
@@ -29,12 +32,27 @@ export const Title1 = styled.h1`
   font-size: 5em;
   color: white;
   font-weight: 400;
+  @media (max-width: 900px) {
+    font-size: 4.5em;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 3.5em;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 3em;
+  }
 `;
 
 export const SubTitle1 = styled.h3`
   font-size: 1.5em;
   font-weight: 500;
   color: white;
+
+  @media (max-width: 600px) {
+    font-size: 1em;
+  }
 `;
 
 export const ButtonWrap = styled.div`
