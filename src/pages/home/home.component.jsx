@@ -1,10 +1,13 @@
 import React from "react";
-import  Header  from "../../components/header/header.component";
-import { HomeContainer } from "./home.styles";
+import {
+  HomeContainer,
+} from "./home.styles";
+
+import ImagesSlider from "../../components/images-slider/images-slider.component";
 
 const HomePage = () => (
   <HomeContainer>
-    <Header></Header>
+    <ImagesSlider />
   </HomeContainer>
 );
 

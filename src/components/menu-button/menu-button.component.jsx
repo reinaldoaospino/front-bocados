@@ -18,7 +18,7 @@ const ButtonMenu = () => {
   return (
     <MenuButtonContainer>
       <Button
-        style={{ color: "white" }}
+        style={{ color: "black" }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
