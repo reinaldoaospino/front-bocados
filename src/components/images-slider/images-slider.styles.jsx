@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const ImagesWrap = styled.div`
-  height: 700px;
-  @media (max-width: 600px) {
-    height: 610px;
-  }
+height: 540px;
 `;
 
 export const Imagen1 = styled.div`
-  background-image: url(${props=>props.ImageUrl});
+  background-image: url(${props => props.ImageUrl});
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
