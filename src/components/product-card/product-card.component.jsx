@@ -7,8 +7,6 @@ import {
  Price, OptionsWrap, Description, PriceWrap
 } from "./product-card.styles";
 
-import CustomButton from "../custom-button/custom-button.component";
-
 const ProductCard = ({urlImage}) => (
   <ProductImageWrap>
     <ImageWrap>
