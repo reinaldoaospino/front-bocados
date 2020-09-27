@@ -23,7 +23,7 @@ const slides = [
 ];
 
 const ImagesSlider = () => (
-  <Slider  >
+  <Slider autoplay={2000} >
     {slides.map((slide, index) => (
       <ImagesWrap key={index}>
         <Imagen1 ImageUrl={slide.img}>
@@ -31,7 +31,7 @@ const ImagesSlider = () => (
             <Title1>{slide.title}</Title1>
             <SubTitle1>We delivered to your House</SubTitle1>
             <ButtonWrap>
-              <CustomButton text="Buy" />
+              <CustomButton text="Shop Now" />
             </ButtonWrap>
           </Title1Wrap>
         </Imagen1>

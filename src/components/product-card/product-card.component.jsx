@@ -1,11 +1,29 @@
-import React from 'react';
-import {  ProductImageWrap, ProductImage } from './product-card.styles';
-import UrlImage1 from "../../assets/princial_img_1.jpg";
+import React from "react";
+import {
+  ProductImageWrap,
+  ProductImage,
+  ImageWrap,
+ DescriptionWrap,
+ Price, OptionsWrap, Description, PriceWrap
+} from "./product-card.styles";
 
-const ProductCard = () => (
-    <ProductImageWrap>
-        <ProductImage ImageUrl={UrlImage1} />
-    </ProductImageWrap>
-)
+import CustomButton from "../custom-button/custom-button.component";
+
+const ProductCard = ({urlImage}) => (
+  <ProductImageWrap>
+    <ImageWrap>
+      <ProductImage ImageUrl={urlImage} />
+    </ImageWrap>
+    <DescriptionWrap>
+        <Description>Cookies</Description>
+    </DescriptionWrap>
+    <PriceWrap>
+        <Price>$ 100</Price>
+    </PriceWrap>
+    <OptionsWrap>
+        
+    </OptionsWrap>
+  </ProductImageWrap>
+);
 
 export default ProductCard;

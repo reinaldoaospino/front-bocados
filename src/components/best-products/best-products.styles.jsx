@@ -1,18 +1,22 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const BestProductsContainer = styled.div`
-display: grid;
+  display: grid;
 `;
 
-
 export const TitleWrap = styled.div`
-margin: auto;`;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+`;
 
-export const Title = styled.h3``;
+export const Title = styled.span`
+  font-size: 2.5em;
+`;
 
 export const ProductsWrap = styled.div`
-display:grid;
-grid-template-columns: 50% 50%;
-justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 40px;
 `;
