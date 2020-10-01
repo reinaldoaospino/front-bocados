@@ -14,7 +14,7 @@ height: 300px;
 export const ProductImage = styled.div`
   background-image: url(${(props) => props.ImageUrl});
   height: 100%;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-position: center;
   border-radius: 16px;

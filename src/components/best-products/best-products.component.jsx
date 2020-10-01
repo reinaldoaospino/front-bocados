@@ -1,8 +1,8 @@
 import React from 'react';
 import { BestProductsContainer, TitleWrap, Title, ProductsWrap } from './best-products.styles';
 import ProductCard from '../product-card/product-card.component';
-import UrlImage1 from "../../assets/princial_img_1.jpg";
-import UrlImage2 from "../../assets/princial_img_2.jpg";
+import UrlImage1 from "../../assets/princial_img_1.jpeg";
+import UrlImage2 from "../../assets/princial_img_2.png";
 import UrlImage3 from "../../assets/princial_img_3.jpg";
 
 const BestProducts = () => (

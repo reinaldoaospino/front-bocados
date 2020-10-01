@@ -9,3 +9,8 @@ margin-top: 80px;
 margin-bottom: 80px;
 
 `
+
+export const ContentContainer = styled.div`
+padding-left: 300px;
+padding-right: 300px;
+`

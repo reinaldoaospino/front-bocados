@@ -3,17 +3,18 @@ import ButtonMenu from "../menu-button/menu-button.component";
 import {
   HeaderContainer,
   LogoWrap,
-  LogoName,
   MenuWrap,
   MenuUl,
   MenuLI,
   MenuLink,
+  Logo
 } from "./header.styles";
+import LogoImage from "../../assets/logo.png";
 
 const Header = () => (
   <HeaderContainer>
     <LogoWrap>
-      <LogoName>Bocados</LogoName>
+      <Logo ImageUrl={LogoImage} />
     </LogoWrap>
     <MenuWrap>
       <ButtonMenu />

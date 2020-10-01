@@ -7,11 +7,14 @@ export const SugarFreeContainer = styled.div`
 `;
 
 export const IconWrapped = styled.div`
-  background-color: #e4b2d6;
-  border-radius: 28%;
+  background-color: ${(props) => props.color};
+  border-radius: 50%;
   width: 100px;
   height: 100px;
   text-align: center;
+  &:hover {
+    background-color: green;
+  }
 `;
 
 export const DescriptionWrapped = styled.div`
@@ -19,5 +22,11 @@ export const DescriptionWrapped = styled.div`
 `;
 
 export const Description = styled.span`
-  font-size: 1.1em;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #000000;
 `;
+
+export const Line = styled.br``

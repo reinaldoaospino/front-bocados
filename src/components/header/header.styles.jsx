@@ -10,10 +10,20 @@ export const HeaderContainer = styled.div`
 
 export const LogoWrap = styled.div``;
 
-export const LogoName = styled.a`
-
+export const Logo = styled.div`
+  background-image: url(${props => props.ImageUrl});
+  height: 103px;
+  width: 134px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  margin: auto;
+  background-color: #D9C39A;
+  border-radius: 46%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
-
 export const MenuWrap = styled.div``;
 
 export const MenuUl = styled.ul`

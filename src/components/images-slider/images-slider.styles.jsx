@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ImagesWrap = styled.div`
-height: 540px;
+  height: 540px;
 `;
 
 export const Imagen1 = styled.div`
-  background-image: url(${props => props.ImageUrl});
+  background-image: url(${(props) => props.ImageUrl});
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,6 +53,13 @@ export const SubTitle1 = styled.h3`
 `;
 
 export const ButtonWrap = styled.div`
-  width: 70%;
+  width: 100%;
+  margin: auto;
+  bottom: 6px;
+  position: absolute;
+`;
+
+export const ButtonWrapeer = styled.div`
+  width: 20%;
   margin: auto;
 `;

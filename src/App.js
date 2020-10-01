@@ -7,10 +7,12 @@ import Header from './components/header/header.component';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-      </Switch>
+      <Header />
+      <div className="content">
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+        </Switch>
+      </div>
     </div>
   );
 }
