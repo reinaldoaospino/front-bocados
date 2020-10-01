@@ -11,6 +11,8 @@ margin-bottom: 80px;
 `
 
 export const ContentContainer = styled.div`
-padding-left: 300px;
-padding-right: 300px;
+max-width: 1000px;
+margin: auto;
+background: white;
+padding: 10px;
 `

@@ -4,11 +4,11 @@ export const ProductContainer = styled.div``;
 
 export const ProductImageWrap = styled.div`
 height: 300px;
-  width: 345px;
+width: 268px;
   border: 1px solid #f0f0f0;
   padding: 20px;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-gap: 6px;
 `;
 
 export const ProductImage = styled.div`
