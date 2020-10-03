@@ -27,7 +27,7 @@ const slides = [
 const ImagesSlider = () => {
  
   return (
-    <Slider>
+    <Slider autoplay={2000}>
       {slides.map((slide, index) => (
         <ImagesWrap key={index}>
           <Imagen1 ImageUrl={slide.img}>
