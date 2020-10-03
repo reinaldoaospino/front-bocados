@@ -7,14 +7,16 @@ import {
   MenuUl,
   MenuLI,
   MenuLink,
-  Logo
+  Logo,
+  CartItems, ProductName
 } from "./header.styles";
 import LogoImage from "../../assets/logo.png";
+import ShopIcon from "../shop-icon/shop-icon.component";
 
 const Header = () => (
   <HeaderContainer>
     <LogoWrap>
-      <Logo ImageUrl={LogoImage} />
+        <ProductName>BOCADOS</ProductName>
     </LogoWrap>
     <MenuWrap>
       <ButtonMenu />
@@ -30,6 +32,12 @@ const Header = () => (
         </MenuLI>
         <MenuLI>
           <MenuLink>About</MenuLink>
+        </MenuLI>
+        <MenuLI>
+          <MenuLink>
+            <ShopIcon color='black' />
+            <CartItems>[0]</CartItems>
+          </MenuLink>
         </MenuLI>
       </MenuUl>
     </MenuWrap>

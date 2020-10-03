@@ -62,4 +62,11 @@ export const ButtonWrap = styled.div`
 export const ButtonWrapeer = styled.div`
   width: 20%;
   margin: auto;
+  display:none;
+
+  ${ImagesWrap}: hover & {
+    display: block;
+  }
+
+  
 `;

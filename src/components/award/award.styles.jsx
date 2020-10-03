@@ -22,11 +22,12 @@ export const DescriptionWrapped = styled.div`
 `;
 
 export const Description = styled.span`
+  letter-spacing: 0.5px;
   font-size: 15px;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 500;
   font-family: "Poppins", Arial, sans-serif;
   color: #000000;
 `;
 
-export const Line = styled.br``
+export const Line = styled.br``;

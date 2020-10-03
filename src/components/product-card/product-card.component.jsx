@@ -4,24 +4,36 @@ import {
   ProductImage,
   ImageWrap,
   DescriptionWrap,
-  Price, OptionsWrap, Description, PriceWrap
+  Price,
+  OptionsWrap,
+  Description,
+  PriceWrap,
+  ShopOptionWrap,
+  ShopOptionText,
+  ShopOptionIcon,
+  ProductImg
 } from "./product-card.styles";
 
-import ShopIcon from '../shop-icon/shop-icon.component';
+import ShopIcon from "../shop-icon/shop-icon.component";
 
-const ProductCard = ({ urlImage }) => (
+const ProductCard = ({ urlImage,ProducName }) => (
   <ProductImageWrap>
     <ImageWrap>
-      <ProductImage ImageUrl={urlImage} />
+      <ProductImg src={urlImage} />
     </ImageWrap>
     <DescriptionWrap>
-      <Description>Cookies</Description>
+      <Description>{ProducName}</Description>
     </DescriptionWrap>
     <PriceWrap>
       <Price>$ 100</Price>
     </PriceWrap>
     <OptionsWrap>
-      <ShopIcon />
+      <ShopOptionWrap>
+        <ShopOptionText>SHOP</ShopOptionText>
+        <ShopOptionIcon>
+          <ShopIcon color='white' />
+        </ShopOptionIcon>
+      </ShopOptionWrap>
     </OptionsWrap>
   </ProductImageWrap>
 );

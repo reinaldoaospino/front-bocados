@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BestProductsContainer = styled.div`
   display: grid;
+  padding-top: 8em;
 `;
 
 export const TitleWrap = styled.div`
@@ -12,6 +13,7 @@ export const TitleWrap = styled.div`
 
 export const Title = styled.span`
   font-size: 2.5em;
+  font-family: 'Cabin';
 `;
 
 export const ProductsWrap = styled.div`

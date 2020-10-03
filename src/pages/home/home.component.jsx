@@ -8,7 +8,8 @@ import DoneIcon from "@material-ui/icons/Done";
 import NomGomIcon from "../../components/non-gmo-icon/non-gmo-icon.component";
 import GlutenFreeIcon from "../../components/gluten-free-icon/gluten-free-icon.component";
 import SugarFreeIcon from "../../components/sugar-free-icon/sugar-free-icon.component";
-import KetoIcon from '../../components/keto-icon/keto-icon.component';
+import KetoIcon from "../../components/keto-icon/keto-icon.component";
+import ProductsPreview from "../../components/products-preview/products-preview.component";
 
 const SugarFree = Award(SugarFreeIcon);
 const GlutenFree = Award(GlutenFreeIcon);
@@ -20,11 +21,12 @@ const HomePage = () => (
     <ImagesSlider />
     <ContentContainer>
       <AwardContainer>
-        <SugarFree text={"Sugar Free"} color={'#C5DB74;'} />
-        <GlutenFree text={"Gluten Free"} color={'#C5DB74;'} />
-        <NonGmo text={"NONGMO"} color={'#C5DB74;'} />
-        <Keto text={"Keto Option"} color={'#C5DB74;'} />
+        <SugarFree text={"Sugar Free"} color={"#C5DB74;"} />
+        <GlutenFree text={"Gluten Free"} color={"#C5DB74;"} />
+        <NonGmo text={"NONGMO"} color={"#C5DB74;"} />
+        <Keto text={"Keto Option"} color={"#C5DB74;"} />
       </AwardContainer>
+      <ProductsPreview />
       <BestProducts />
     </ContentContainer>
   </HomeContainer>

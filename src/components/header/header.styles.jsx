@@ -28,9 +28,7 @@ export const MenuWrap = styled.div``;
 
 export const MenuUl = styled.ul`
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 13% 13% 16% 13% 10%;
   justify-items: end;
 
   @media (max-width: 850px) {
@@ -44,6 +42,16 @@ export const MenuLI = styled.li`
 `;
 
 export const MenuLink = styled.a`
-
+text-decoration: none;
+font-family: 'Crimson Text', serif;
+text-transform: uppercase;
   text-decoration: none;
 `;
+
+export const CartItems = styled.span`
+`
+
+export const ProductName = styled.span`
+font-family: 'Sansita Swashed', cursive;
+font-size: 2.5em;
+`
