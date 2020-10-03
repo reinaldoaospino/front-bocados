@@ -8,15 +8,15 @@ import {
   MenuLI,
   MenuLink,
   Logo,
-  CartItems, ProductName
+  CartItems
 } from "./header.styles";
-import LogoImage from "../../assets/logo.png";
+import LogoHeader from "../../assets/logoHeader.svg";
 import ShopIcon from "../shop-icon/shop-icon.component";
 
 const Header = () => (
   <HeaderContainer>
     <LogoWrap>
-        <ProductName>BOCADOS</ProductName>
+      <Logo ImageUrl={LogoHeader} />
     </LogoWrap>
     <MenuWrap>
       <ButtonMenu />
