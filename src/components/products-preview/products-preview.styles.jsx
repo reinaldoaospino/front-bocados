@@ -13,14 +13,14 @@ export const Preview = styled.div`
 `;
 
 export const PreviewMiddle = styled.div`
-  grid-row-start: span 2;
-  align-self: center;
-  justify-self: center;
+  height: 237px;
+  border-radius: 80px;
+  background-color: #d9c39a;
 `;
 
 export const ProductImg = styled.img`
-  height: 400px;
-  width: 400px;
+  height: 237px;
+  width: 100%;
 `;
 
 export const Gif = styled.div`

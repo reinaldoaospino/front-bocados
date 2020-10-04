@@ -22,7 +22,7 @@ const ProductsPreview = () => (
   <ProducstPreviewContainer>
     <Preview>
       <Video loop autoPlay muted>
-        <SourveVideo src={Video1} type="video/mp4" />
+        <SourveVideo src={Video2} type="video/mp4" />
       </Video>
     </Preview>
     <PreviewMiddle>
@@ -30,19 +30,9 @@ const ProductsPreview = () => (
     </PreviewMiddle>
     <Preview>
       <Video loop autoPlay muted>
-        <SourveVideo src={Video2} type="video/mp4" />
-      </Video>
-    </Preview>
-    <Preview>
-      <Video loop autoPlay muted>
         <SourveVideo src={Video3} type="video/mp4" />
       </Video>
-    </Preview>
-    <Preview>
-      <Video loop autoPlay muted>
-        <SourveVideo src={Video4} type="video/mp4" />
-      </Video>
-    </Preview>
+    </Preview>  
   </ProducstPreviewContainer>
 );
 
