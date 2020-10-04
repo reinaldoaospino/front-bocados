@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
 export const LogoWrap = styled.div``;
 
 export const Logo = styled.div`
-  background-image: url(${props => props.ImageUrl});
+  background-image: url(${(props) => props.ImageUrl});
   height: 70px;
   width: 270px;
   background-repeat: no-repeat;
@@ -33,22 +33,21 @@ export const MenuUl = styled.ul`
 `;
 
 export const MenuLI = styled.li`
-
   list-style: none;
 `;
 
 export const MenuLink = styled.a`
-text-decoration: none;
-font-family: 'Crimson Text', serif;
-text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.3em; 
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
 `;
 
-export const CartItems = styled.span`
-`
+export const CartItems = styled.span``;
 
 export const ProductName = styled.span`
-font-family: 'Sansita Swashed', cursive;
-font-size: 2.5em;
-`
+  font-family: "Sansita Swashed", cursive;
+  font-size: 2.5em;
+`;

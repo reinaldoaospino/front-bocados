@@ -13,7 +13,7 @@ export const IconWrapped = styled.div`
   height: 100px;
   text-align: center;
   &:hover {
-    background-color: green;
+    background-color: #98D470;
   }
 `;
 

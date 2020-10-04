@@ -5,7 +5,7 @@ import UrlImage1 from "../../assets/product_1.png";
 import UrlImage2 from "../../assets/product_2.png";
 import UrlImage3 from "../../assets/product_3.png";
 import UrlImage4 from "../../assets/product_4.png";
-import UrlImage5 from "../../assets/product_5.svg";
+import UrlImage5 from "../../assets/product_5.png";
 import UrlImage6 from "../../assets/product_6.png";
 
 

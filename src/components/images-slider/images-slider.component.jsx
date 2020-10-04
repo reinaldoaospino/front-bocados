@@ -9,9 +9,9 @@ import {
   ButtonWrap,
   ButtonWrapeer,
 } from "./images-slider.styles";
-import UrlImage1 from "../../assets/princial_img_1.jpeg";
+import UrlImage1 from "../../assets/princial_img_1.png";
 import UrlImage2 from "../../assets/princial_img_2.png";
-import UrlImage3 from "../../assets/princial_img_3.jpg";
+import UrlImage3 from "../../assets/princial_img_3.png";
 
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
@@ -27,13 +27,13 @@ const slides = [
 const ImagesSlider = () => {
  
   return (
-    <Slider autoplay={2000}>
+    <Slider  autoplay={2000}>
       {slides.map((slide, index) => (
         <ImagesWrap key={index}>
           <Imagen1 ImageUrl={slide.img}>
             <ButtonWrap>
               <ButtonWrapeer>
-                <CustomButton text="Shop Now" />
+                <CustomButton text="More" />
               </ButtonWrapeer>
             </ButtonWrap>
           </Imagen1>

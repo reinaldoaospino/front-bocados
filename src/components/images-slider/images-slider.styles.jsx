@@ -60,13 +60,11 @@ export const ButtonWrap = styled.div`
 `;
 
 export const ButtonWrapeer = styled.div`
-  width: 20%;
+  width: 12%;
   margin: auto;
-  display:none;
+  display: none;
 
   ${ImagesWrap}: hover & {
     display: block;
   }
-
-  
 `;

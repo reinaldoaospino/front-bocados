@@ -15,6 +15,7 @@ import {
 } from "./product-card.styles";
 
 import ShopIcon from "../shop-icon/shop-icon.component";
+import CustomButton from "../custom-button/custom-button.component";
 
 const ProductCard = ({ urlImage,ProducName }) => (
   <ProductImageWrap>
@@ -29,10 +30,7 @@ const ProductCard = ({ urlImage,ProducName }) => (
     </PriceWrap>
     <OptionsWrap>
       <ShopOptionWrap>
-        <ShopOptionText>SHOP</ShopOptionText>
-        <ShopOptionIcon>
-          <ShopIcon color='white' />
-        </ShopOptionIcon>
+        <CustomButton text='shop' icon={<ShopIcon color='white'/>}/>
       </ShopOptionWrap>
     </OptionsWrap>
   </ProductImageWrap>

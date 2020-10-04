@@ -1,42 +1,61 @@
-import React from 'react';
+import React from "react";
+import InstagramIcon from "../instagram-icon/instagram-icon.component";
+import WhatsAppIcon from "../whastapp-icon/whastapp-icon.component";
+import EmailIcon from "@material-ui/icons/Email";
+import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
+import RoomIcon from "@material-ui/icons/Room";
 import {
-    FooterContainer,
-    BrandWrapped, MenuWrapped, ContactWrapped, CopyRightWrapped, LogoWrapped, Logo,
-    MenuTitle,MenuOption,ContactTitle,ContactEmail,CopyRight
-} from './footer.styes';
-import LogoHeader from "../../assets/logoHeader.svg";
-
+  FooterContainer,
+  SocialMediaWrapped,
+  InstagramWrapped,
+  MenuWrapped,
+  ContactWrapped,
+  CopyRightWrapped,
+  CopyRight,
+  Title,
+  SpanItem,
+  WhatsAppWrapped,
+  ContactItemWrapped,
+} from "./footer.styes";
 
 const Footer = () => (
-    <FooterContainer>
-        <BrandWrapped>
-            <LogoWrapped>
+  <FooterContainer>
+    <SocialMediaWrapped>
+      <InstagramWrapped>
+        <InstagramIcon urlAccount={"https://www.instagram.com/bocados.nj/"} />
+      </InstagramWrapped>
+      <WhatsAppWrapped>
+        <WhatsAppIcon urlAccount={""} />
+      </WhatsAppWrapped>
+    </SocialMediaWrapped>
 
-                <Logo ImageUrl={LogoHeader} />
-            </LogoWrapped>
-        </BrandWrapped>
+    <MenuWrapped>
+      <Title>Menu</Title>
+      <SpanItem>Shop</SpanItem>
+      <SpanItem>Contact</SpanItem>
+      <SpanItem>About</SpanItem>
+    </MenuWrapped>
 
-        <MenuWrapped>
-        <MenuTitle>Menu</MenuTitle>
-        <MenuOption>Shop</MenuOption>
-        <MenuOption>Contact</MenuOption>
-        <MenuOption>About</MenuOption>
-        </MenuWrapped>
+    <ContactWrapped>
+      <Title>Contact</Title>
+      <ContactItemWrapped>
+        <EmailIcon style={{ fontSize: "2em" }} />
+        <SpanItem>bocados@gmail.com</SpanItem>
+      </ContactItemWrapped>
+      <ContactItemWrapped>
+        <ContactPhoneIcon style={{ fontSize: "2em" }} />
+        <SpanItem>1137677234</SpanItem>
+      </ContactItemWrapped>
+      <ContactItemWrapped>
+        <RoomIcon style={{ fontSize: "2em" }} />
+        <SpanItem>New Jersey</SpanItem>
+      </ContactItemWrapped>
+    </ContactWrapped>
 
-        <ContactWrapped>
-        <ContactTitle>Contact</ContactTitle>
-        <ContactEmail>bodados@gmail.com</ContactEmail>
-        <ContactEmail>1137677234</ContactEmail>
-        <ContactEmail>New Jersey</ContactEmail>
-        </ContactWrapped>
-
-        <CopyRightWrapped>
-            <CopyRight>Copyright © Bocados 2020. All right reserved.</CopyRight>
-        </CopyRightWrapped>
-
-
-    </FooterContainer>
-)
-
+    <CopyRightWrapped>
+      <CopyRight>Copyright © Bocados 2020. All right reserved.</CopyRight>
+    </CopyRightWrapped>
+  </FooterContainer>
+);
 
 export default Footer;

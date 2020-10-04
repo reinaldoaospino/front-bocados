@@ -47,7 +47,6 @@ export const Price = styled.span`
   ${ProductImageWrap}: hover & {
     display: none;
   }
-  
 `;
 
 export const PriceWrap = styled.div`
@@ -57,21 +56,10 @@ export const PriceWrap = styled.div`
 export const OptionsWrap = styled.div``;
 
 export const ShopOptionWrap = styled.div`
-  background-color: #82ae46;
-  border-radius: 10px;
-  height: 25px;
-  width: 46%;
-  position: absolute;
-  bottom: 6%;
-  right: 25%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  justify-items: center;
   display: none;
 
   ${ProductImageWrap}: hover & {
-    display: grid;
+    display: block;
   }
 `;
 
