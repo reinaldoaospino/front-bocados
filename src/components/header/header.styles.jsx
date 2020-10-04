@@ -12,8 +12,8 @@ export const LogoWrap = styled.div``;
 
 export const Logo = styled.div`
   background-image: url(${props => props.ImageUrl});
-  height: 56px;
-  width: 238px;
+  height: 70px;
+  width: 270px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -42,6 +42,7 @@ text-decoration: none;
 font-family: 'Crimson Text', serif;
 text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.3em; 
 `;
 
 export const CartItems = styled.span`

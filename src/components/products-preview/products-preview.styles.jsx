@@ -13,9 +13,11 @@ export const Preview = styled.div`
 `;
 
 export const PreviewMiddle = styled.div`
-  height: 237px;
-  border-radius: 80px;
-  background-color: #d9c39a;
+height: 237px;
+border-radius: 80px;
+background-color: #d9c39a;
+width: 237px;
+margin: auto;
 `;
 
 export const ProductImg = styled.img`

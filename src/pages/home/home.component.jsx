@@ -10,6 +10,7 @@ import GlutenFreeIcon from "../../components/gluten-free-icon/gluten-free-icon.c
 import SugarFreeIcon from "../../components/sugar-free-icon/sugar-free-icon.component";
 import KetoIcon from "../../components/keto-icon/keto-icon.component";
 import ProductsPreview from "../../components/products-preview/products-preview.component";
+import Footer from "../../components/footer/footer.component";
 
 const SugarFree = Award(SugarFreeIcon);
 const GlutenFree = Award(GlutenFreeIcon);
@@ -29,6 +30,7 @@ const HomePage = () => (
       <ProductsPreview />
       <BestProducts />
     </ContentContainer>
+    <Footer/>
   </HomeContainer>
 );
 
