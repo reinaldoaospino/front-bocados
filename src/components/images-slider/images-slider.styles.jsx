@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ImagesWrap = styled.div`
-  height: 540px;
+  height: 100%;
 `;
 
 export const Imagen1 = styled.div`
@@ -11,6 +11,7 @@ export const Imagen1 = styled.div`
   background-size: cover;
   position: relative;
   background-position: center;
+
 `;
 
 export const Title1Wrap = styled.div`
