@@ -25,7 +25,7 @@ const Footer = () => (
         <InstagramIcon urlAccount={"https://www.instagram.com/bocados.nj/"} />
       </InstagramWrapped>
       <WhatsAppWrapped>
-        <WhatsAppIcon urlAccount={""} />
+        <WhatsAppIcon urlAccount={"https://api.whatsapp.com/message/QSVADFAKURYPB1"} />
       </WhatsAppWrapped>
     </SocialMediaWrapped>
 

@@ -27,7 +27,18 @@ export const MenuUl = styled.ul`
   grid-template-columns: 13% 13% 16% 13% 10%;
   justify-items: end;
 
-  @media (max-width: 850px) {
+  @media (max-width: 1434px) {
+    grid-template-columns: 13% 14% 19% 16% 10%;
+  }
+
+  @media (max-width: 1236px) {
+    grid-template-columns: 13% 16% 21% 18% 15%;
+  }
+
+  @media (max-width: 1056px) {
+    grid-template-columns: 12% 16% 25% 18% 15%;
+  }
+  @media (max-width: 916px) {
     display: none;
   }
 `;
@@ -43,6 +54,9 @@ export const MenuLink = styled.a`
   text-decoration: none;
   font-size: 1.3em;
   color: black;
+  @media (max-width: 1236px) {
+    font-size: 1.2em;
+  }
 `;
 
 export const CartItems = styled.span``;

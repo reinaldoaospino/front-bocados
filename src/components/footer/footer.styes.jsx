@@ -60,7 +60,7 @@ export const Title = styled.span`
 
 export const SpanItem = styled.span`
   font-size: 1.3em;
-  margin-left: 4px; 
+  margin-left: 4px;
 `;
 
 export const ContactWrapped = styled.div`
