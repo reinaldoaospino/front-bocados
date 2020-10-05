@@ -35,4 +35,18 @@
     }
   }
 
+  @media only screen and (max-width: 400px) {
+    .slider {
+      height: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .slider {
+      height: 290px;
+    }
+  }
+
+
+
 
