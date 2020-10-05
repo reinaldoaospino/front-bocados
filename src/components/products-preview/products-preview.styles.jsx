@@ -6,7 +6,7 @@ export const ProducstPreviewContainer = styled.div`
   padding-top: 8em;
   grid-gap: 14px;
 
-  @media (max-width: 880px){
+  @media (max-width: 880px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -17,11 +17,11 @@ export const Preview = styled.div`
 `;
 
 export const PreviewMiddle = styled.div`
-height: 237px;
-border-radius: 80px;
-background-color: #d9c39a;
-width: 237px;
-margin: auto;
+  height: 237px;
+  border-radius: 80px;
+  background-color: #d9c39a;
+  width: 237px;
+  margin: auto;
 `;
 
 export const ProductImg = styled.img`

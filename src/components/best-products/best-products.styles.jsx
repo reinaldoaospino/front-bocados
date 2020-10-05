@@ -21,4 +21,13 @@ export const ProductsWrap = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   grid-gap: 40px;
+
+  @media(max-width: 1023px){
+    grid-template-columns: 1fr 1fr;  
+    grid-gap: 20px;
+  }
+  @media(max-width: 655px){
+    grid-template-columns: 1fr;  
+  }
+  
 `;
