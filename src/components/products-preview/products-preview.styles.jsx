@@ -5,6 +5,10 @@ export const ProducstPreviewContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 8em;
   grid-gap: 14px;
+
+  @media (max-width: 880px){
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Preview = styled.div`
