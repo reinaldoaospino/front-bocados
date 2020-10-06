@@ -7,7 +7,7 @@ export const AwardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 80px;
   margin-bottom: 80px;
-
+ 
   @media (max-width: 550px){
     grid-template-columns: 1fr 1fr;
     grid-gap: 44px;
