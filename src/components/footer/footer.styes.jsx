@@ -75,8 +75,6 @@ export const MenuWrapped = styled.div`
   justify-content: center;
   @media (max-width: 600px) {
     display: grid;
-    width: 50%;
-    margin: auto;
     text-align: center;
   }
 `;
@@ -103,8 +101,6 @@ export const ContactWrapped = styled.div`
 
   @media (max-width: 600px) {
     display: grid;
-    width: 50%;
-    margin: auto;
     text-align: center;
   }
 `;
