@@ -58,6 +58,10 @@ export const ButtonWrap = styled.div`
   margin: auto;
   bottom: 6px;
   position: absolute;
+
+  @media (max-width: 1485px) {
+    bottom: 3px;
+  }
 `;
 
 export const ButtonWrapeer = styled.div`
@@ -68,4 +72,26 @@ export const ButtonWrapeer = styled.div`
   ${ImagesWrap}: hover & {
     display: block;
   }
+
+  
+  @media (max-width: 1485px) {
+    bottom: 14%;
+  }
+
+  @media (max-width: 1485px) {
+    width: 20%;
+  }
+
+  @media (max-width: 895px) {
+    width: 30%;
+  }
+
+  @media (max-width: 500px) {
+    width: 40%;
+  }
+
+  @media (max-width: 500px) {
+    width: 50%;
+  }
+
 `;

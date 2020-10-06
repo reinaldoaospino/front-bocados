@@ -19,15 +19,10 @@
 
   @media only screen and (max-width: 1195px) {
     .slider {
-      height: 300px;
+      height: 358px;
     }
   }
 
-  @media only screen and (max-width: 1195px) {
-    .slider {
-      height: 300px;
-    }
-  }
 
   @media only screen and (max-width: 895px) {
     .slider {
