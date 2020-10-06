@@ -18,10 +18,14 @@ export const FooterContainer = styled.div`
   @media (max-width: 932px) {
     grid-template-columns: 40% 25% 25%;
   }
-  
+
   @media (max-width: 600px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 303px;
+
   }
+
+
 `;
 
 export const SocialMediaWrapped = styled.div`
@@ -33,6 +37,10 @@ export const SocialMediaWrapped = styled.div`
     grid-template-columns: 50% 1%;
   }
 
+  @media (max-width: 600px) {
+    grid-template-columns: 25% 25%;
+    grid-column-start: span 2;
+  }
 `;
 
 export const InstagramWrapped = styled.div`
@@ -65,6 +73,12 @@ background-position: center;
 export const MenuWrapped = styled.div`
   display: grid;
   justify-content: center;
+  @media (max-width: 600px) {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
 `;
 
 export const Title = styled.span`
@@ -86,6 +100,13 @@ export const SpanItem = styled.span`
 export const ContactWrapped = styled.div`
   display: grid;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
 `;
 
 export const ContactItemWrapped = styled.div`
@@ -99,7 +120,7 @@ export const CopyRightWrapped = styled.div`
   grid-column-start: span 3;
 
   @media (max-width: 600px) {
-    grid-column-start: span 1;
+    grid-column-start: span 2;
   }
 `;
 export const CopyRight = styled.span`
