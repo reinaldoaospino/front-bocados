@@ -19,7 +19,7 @@
 
   @media only screen and (max-width: 1195px) {
     .slider {
-      height: 358px;
+      height: 300px;
     }
   }
 
@@ -27,6 +27,31 @@
   @media only screen and (max-width: 895px) {
     .slider {
       height: 650px;
+    }
+  }
+
+  @media only screen and (max-width: 895px) {
+    .slider {
+      height: 650px;
+    }
+  }
+  
+  @media only screen and (max-width: 605px) {
+    .slider {
+      height: 600px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 555px) {
+    .slider {
+      height: 500px;  
+    }
+  }
+
+  @media only screen and (max-width: 463px) {
+    .slider {
+      height: 410px;
     }
   }
 
