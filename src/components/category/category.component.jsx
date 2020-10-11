@@ -8,7 +8,7 @@ import {
 
 const CategoryComponent = ({ selected }) => (
   <CategoryContainer>
-    <CategoryWrapped style={{backgroundColor:'#C5DB74', color:'white'}}>
+    <CategoryWrapped selected={true}>
       <CategoryItem >ALL</CategoryItem>
     </CategoryWrapped>
     <CategoryWrapped>
