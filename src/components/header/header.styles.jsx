@@ -47,7 +47,7 @@ export const MenuLI = styled.li`
   list-style: none;
 `;
 
-export const MenuLink = styled.a`
+export const LinkOption = styled.div`
   text-decoration: none;
   font-family: "Crimson Text", serif;
   text-transform: uppercase;

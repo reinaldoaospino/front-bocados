@@ -6,12 +6,17 @@ import {
   MenuWrap,
   MenuUl,
   MenuLI,
-  MenuLink,
+  LinkOption,
   Logo,
-  CartItems
+  CartItems,
 } from "./header.styles";
 import LogoHeader from "../../assets/logoHeader.svg";
 import ShopIcon from "../shop-icon/shop-icon.component";
+import { Link } from "react-router-dom";
+
+const LinkStyles = {
+  textDecoration: "none",
+};
 
 const Header = () => (
   <HeaderContainer>
@@ -22,22 +27,30 @@ const Header = () => (
       <ButtonMenu />
       <MenuUl>
         <MenuLI>
-          <MenuLink href="Home">Home</MenuLink>
+          <Link style={LinkStyles} to="/front-bocados">
+            <LinkOption>Home</LinkOption>
+          </Link>
         </MenuLI>
         <MenuLI>
-          <MenuLink>Shop</MenuLink>
+          <Link style={LinkStyles} to="/front-bocados/shop">
+            <LinkOption>Shop</LinkOption>
+          </Link>
         </MenuLI>
         <MenuLI>
-          <MenuLink>Contact</MenuLink>
+          <Link style={LinkStyles}>
+            <LinkOption>Contact</LinkOption>
+          </Link>
         </MenuLI>
         <MenuLI>
-          <MenuLink>About</MenuLink>
+          <Link style={LinkStyles}>
+            <LinkOption>About</LinkOption>
+          </Link>
         </MenuLI>
         <MenuLI>
-          <MenuLink>
-            <ShopIcon color='black' />
+          <LinkOption>
+            <ShopIcon color="black" />
             <CartItems>[0]</CartItems>
-          </MenuLink>
+          </LinkOption>
         </MenuLI>
       </MenuUl>
     </MenuWrap>
