@@ -29,7 +29,6 @@ const HomePage = () => (
       <ProductsPreview />
       <BestProducts />
     </ContentContainer>
-    <Footer/>
   </HomeContainer>
 );
 

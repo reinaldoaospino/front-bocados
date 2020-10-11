@@ -6,10 +6,10 @@ import {
 } from "./category.styles";
 
 
-const CategoryComponent = () => (
+const CategoryComponent = ({ selected }) => (
   <CategoryContainer>
-    <CategoryWrapped>
-      <CategoryItem>ALL</CategoryItem>
+    <CategoryWrapped style={{backgroundColor:'#C5DB74', color:'white'}}>
+      <CategoryItem >ALL</CategoryItem>
     </CategoryWrapped>
     <CategoryWrapped>
       <CategoryItem>Brownie</CategoryItem>

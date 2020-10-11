@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/home/home.page';
 import Header from './components/header/header.component';
 import ShopPage from './pages/shop/shop.page';
+import Footer from './components/footer/footer.component';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/front-bocados/shop' component={ShopPage} />
         </Switch>
       </div>
+      <Footer/>
     </div>
   );
 }

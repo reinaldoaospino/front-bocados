@@ -5,15 +5,16 @@ export const CategoryContainer = styled.div`
   justify-content: center;
   grid-template-columns: 10% 10% 10% 10%;
   margin-top: 200px; //TODO eliminar
+  text-align: center;
 `;
 
 export const CategoryWrapped = styled.div`
-justify-self: center;`;
+border-radius: 10px;`;
 
 export const CategoryItem = styled.span`
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 17px;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Poppins",Arial,sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 `;
