@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import {
   Imagen1,
   ImagesWrap,
-  Title1,
-  Title1Wrap,
-  SubTitle1,
   ButtonWrap,
   ButtonWrapeer,
 } from "./images-slider.styles";
+
 import UrlImage1 from "../../assets/princial_img_1.png";
 import UrlImage2 from "../../assets/princial_img_2.png";
 import UrlImage3 from "../../assets/princial_img_3.png";
@@ -16,7 +14,6 @@ import UrlImage3 from "../../assets/princial_img_3.png";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "./images.styles.css";
-import { Tune } from "@material-ui/icons";
 
 const slides = [
   { title: "The best cookies ever", img: UrlImage1 },

@@ -29,15 +29,6 @@ export const ProductImg = styled.img`
   width: 100%;
 `;
 
-export const Gif = styled.div`
-  background-image: url(${(props) => props.gif});
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 95px;
-`;
-
 export const Video = styled.video`
   height: 95%;
   border-radius: 80px;

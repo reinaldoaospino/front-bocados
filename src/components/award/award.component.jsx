@@ -1,11 +1,9 @@
 import React from "react";
-import CustomButton from "../custom-button/custom-button.component";
 import {
   SugarFreeContainer,
   IconWrapped,
   DescriptionWrapped,
   Description,
-  Line,
 } from "./award.styles";
 
 const SugarFree = (IconComponent) => ({ text, color }) => (

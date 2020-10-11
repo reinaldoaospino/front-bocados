@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ProductImageWrap,
-  ProductImage,
   ImageWrap,
   DescriptionWrap,
   Price,
@@ -9,8 +8,6 @@ import {
   Description,
   PriceWrap,
   ShopOptionWrap,
-  ShopOptionText,
-  ShopOptionIcon,
   ProductImg
 } from "./product-card.styles";
 

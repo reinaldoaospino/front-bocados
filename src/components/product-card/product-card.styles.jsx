@@ -62,15 +62,3 @@ export const ShopOptionWrap = styled.div`
     display: block;
   }
 `;
-
-export const ShopOptionText = styled.span`
-  color: white;
-  font-size: 17px;
-  margin-top: 3px;
-  justify-self: end;
-`;
-
-export const ShopOptionIcon = styled.div`
-  margin-left: 34px;
-  padding-top: 2px;
-`;

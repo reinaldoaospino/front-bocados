@@ -29,5 +29,3 @@ export const Description = styled.span`
   font-family: "Poppins", Arial, sans-serif;
   color: #000000;
 `;
-
-export const Line = styled.br``;
