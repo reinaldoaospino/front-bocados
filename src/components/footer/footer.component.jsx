@@ -40,11 +40,11 @@ const Footer = () => (
       <Title>Contact</Title>
       <ContactItemWrapped>
         <EmailIcon style={{ fontSize: "2em" }} />
-        <SpanItem>bocados@gmail.com</SpanItem>
+        <SpanItem>bocados.nj@gmail.com</SpanItem>
       </ContactItemWrapped>
       <ContactItemWrapped>
         <ContactPhoneIcon style={{ fontSize: "2em" }} />
-        <SpanItem>1137677234</SpanItem>
+        <SpanItem>+1 551 7759096</SpanItem>
       </ContactItemWrapped>
       <ContactItemWrapped>
         <RoomIcon style={{ fontSize: "2em" }} />
