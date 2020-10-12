@@ -37,7 +37,7 @@ const Header = () => (
           </Link>
         </MenuLI>
         <MenuLI>
-          <Link style={LinkStyles}>
+          <Link style={LinkStyles}  to="/front-bocados/contact" >
             <LinkOption>Contact</LinkOption>
           </Link>
         </MenuLI>
