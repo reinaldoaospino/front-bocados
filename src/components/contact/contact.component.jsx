@@ -7,19 +7,19 @@ import { ContactForm, InputWrapped, ButtonWrapped } from "./contact.styles";
 const Contact = () => (
   <ContactForm>
     <InputWrapped>
-      <CustomInput text={"Name"} />
+      <CustomInput text={"Name"} required={true} />
     </InputWrapped>
     <InputWrapped>
-      <CustomInput text={"Email"} />
+      <CustomInput text={"Email"} required={true} />
     </InputWrapped>
     <InputWrapped>
-      <CustomInput text={"Subject"} />
+      <CustomInput text={"Subject"} required={true} />
     </InputWrapped>
     <InputWrapped>
-      <CustomTexTarea text={"Message"} />
+      <CustomTexTarea text={"Message"} required={true} />
     </InputWrapped>
     <ButtonWrapped>
-      <CustomButton text={"Send Message"} />
+      <CustomButton text={"Send Message"} required={true} />
     </ButtonWrapped>
   </ContactForm>
 );
