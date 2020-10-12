@@ -15,5 +15,5 @@ border: 1px solid;
 `
 
 export const ContactWrapped = styled.div`
-height: 300px;
+
 `
