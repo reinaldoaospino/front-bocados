@@ -12,6 +12,7 @@ export const AboutWrapped = styled.div`
   grid-gap: 60px;
   padding: 65px 0px;
 `;
-export const AboutImage = styled.div`
-  border: 1px solid;
+export const AboutImage = styled.img`
+  height: 450px;
+  background-color: #d9c39a;
 `;
