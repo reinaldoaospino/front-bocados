@@ -52,11 +52,8 @@ export const LinkOption = styled.div`
   font-family: "Crimson Text", serif;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: black;
-  @media (max-width: 1236px) {
-    font-size: 1.2em;
-  }
 `;
 
 export const CartItems = styled.span``;

@@ -10,8 +10,7 @@ export const AboutWrapped = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
-  margin-top: 200px; //TODO eliminar
-  padding: 50px 0px;
+  padding: 65px 0px;
 `;
 export const AboutImage = styled.div`
   border: 1px solid;

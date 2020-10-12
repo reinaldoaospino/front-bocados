@@ -9,6 +9,7 @@ export const ContactForm = styled.form`
 
 export const InputWrapped = styled.div`
   margin-bottom: 10px;
+  background: white;
   @media (max-width: 1038px) {
     width: 90%;
   }

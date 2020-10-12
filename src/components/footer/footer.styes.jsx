@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   display: grid;
-  height: 350px;
+  height: 285px;
   grid-template-columns: 50% 25% 25%;
   background: linear-gradient(
     90deg,
