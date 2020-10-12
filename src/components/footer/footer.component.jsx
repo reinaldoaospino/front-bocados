@@ -17,6 +17,12 @@ import {
   WhatsAppWrapped,
   ContactItemWrapped,
 } from "./footer.styes";
+import { Link } from "react-router-dom";
+
+const LinkStyles = {
+  textDecoration: "none",
+  color: "black",
+};
 
 const Footer = () => (
   <FooterContainer>
@@ -25,15 +31,26 @@ const Footer = () => (
         <InstagramIcon urlAccount={"https://www.instagram.com/bocados.nj/"} />
       </InstagramWrapped>
       <WhatsAppWrapped>
-        <WhatsAppIcon urlAccount={"https://api.whatsapp.com/message/QSVADFAKURYPB1"} />
+        <WhatsAppIcon
+          urlAccount={"https://api.whatsapp.com/message/QSVADFAKURYPB1"}
+        />
       </WhatsAppWrapped>
     </SocialMediaWrapped>
 
     <MenuWrapped>
       <Title>Menu</Title>
-      <SpanItem>Shop</SpanItem>
-      <SpanItem>Contact</SpanItem>
-      <SpanItem>About</SpanItem>
+      <SpanItem>
+        {" "}
+        <Link style={LinkStyles} to="/front-bocados/shop">Shop</Link>
+      </SpanItem>
+      <SpanItem>
+        {" "}
+        <Link style={LinkStyles} to="/front-bocados/contact" >Contact</Link>{" "}
+      </SpanItem>
+      <SpanItem>
+        {" "}
+        <Link style={LinkStyles} to="/front-bocados/about">About</Link>{" "}
+      </SpanItem>
     </MenuWrapped>
 
     <ContactWrapped>
