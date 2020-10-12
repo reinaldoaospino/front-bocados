@@ -6,6 +6,7 @@ import Header from './components/header/header.component';
 import ShopPage from './pages/shop/shop.page';
 import Footer from './components/footer/footer.component';
 import ContactPage from './pages/contact/contact.page';
+import AboutPage from './pages/about/about.page';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
           <Route exact path='/front-bocados' component={HomePage} />
           <Route path='/front-bocados/shop' component={ShopPage} />
           <Route path='/front-bocados/contact' component={ContactPage} />
+          <Route path='/front-bocados/about' component={AboutPage} />
         </Switch>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
