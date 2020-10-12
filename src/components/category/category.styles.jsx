@@ -4,7 +4,7 @@ export const CategoryContainer = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: 12% 12% 12% 12%;
-  margin-top: 200px; //TODO eliminar
+  margin-top: 80px; //TODO eliminar
   text-align: center;
 
   @media (max-width: 845px) {

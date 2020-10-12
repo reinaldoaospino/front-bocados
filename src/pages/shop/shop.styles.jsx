@@ -20,3 +20,8 @@ export const ProductsWrapped = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+export const ImagenExample = styled.div`
+  border: 1px solid;
+  height: 300px;
+`;
