@@ -4,13 +4,16 @@ import Testimony from "../../components/testimony/testimony.component";
 import { AboutImage, AboutPageContainer, AboutWrapped } from "./about.styles";
 
 const AboutPage = () => (
-  <AboutPageContainer>
-    <AboutWrapped>
-      <AboutImage />
-      <AboutMessage />
-    </AboutWrapped>
-    <Testimony/>
-  </AboutPageContainer>
+  <div>
+    <AboutPageContainer>
+      <AboutWrapped>
+        <AboutImage />
+        <AboutMessage />
+      </AboutWrapped>
+    </AboutPageContainer>
+    <Testimony />
+  </div>
+
 );
 
 export default AboutPage;

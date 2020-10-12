@@ -18,10 +18,19 @@ export const TestimonysWrapped = styled.div`
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 40px;
+margin-top: 30px;
 `
 
 
 export const TestimonyCardWrapped = styled.div`
-border: 1px solid;
-height: 400px;
+display: flex;
+    flex-direction: column;
+`
+export const TestimonyParagraph = styled.p`
+`
+
+export const TestimonyAutor = styled.h3`
+`
+
+export const TestimonyDate = styled.h4`
 `
