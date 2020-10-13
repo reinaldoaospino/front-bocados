@@ -3,14 +3,15 @@ import Contact from "../../components/contact/contact.component";
 import {
   ContactPageContainer,
   ContactPageWrapped,
-  MapWrapped,
+  ContactImg,
   ContactWrapped,
 } from "./contact.styles";
+import ContactImgen from '../../assets/contact_img.PNG'
 
 const ContactPage = () => (
   <ContactPageContainer>
     <ContactPageWrapped>
-      <MapWrapped></MapWrapped>
+      <ContactImg src={ContactImgen}/>
       <ContactWrapped>
         <Contact />
       </ContactWrapped>

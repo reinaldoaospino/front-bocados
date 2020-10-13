@@ -13,8 +13,8 @@ grid-gap: 100px;
 padding: 65px 0px;
 `
 
-export const MapWrapped = styled.div`
-border: 1px solid;
+export const ContactImg = styled.img`
+height: 374px;
 `
 
 export const ContactWrapped = styled.div`
