@@ -21,7 +21,9 @@ const LinkStyles = {
 const Header = () => (
   <HeaderContainer>
     <LogoWrap>
-      <Logo ImageUrl={LogoHeader} />
+      <Link to="/front-bocados">
+        <Logo ImageUrl={LogoHeader} />
+      </Link>
     </LogoWrap>
     <MenuWrap>
       <ButtonMenu />
@@ -37,7 +39,7 @@ const Header = () => (
           </Link>
         </MenuLI>
         <MenuLI>
-          <Link style={LinkStyles}  to="/front-bocados/contact" >
+          <Link style={LinkStyles} to="/front-bocados/contact" >
             <LinkOption>Contact</LinkOption>
           </Link>
         </MenuLI>

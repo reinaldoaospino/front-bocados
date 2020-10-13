@@ -9,7 +9,7 @@ import GlutenFreeIcon from "../../components/gluten-free-icon/gluten-free-icon.c
 import SugarFreeIcon from "../../components/sugar-free-icon/sugar-free-icon.component";
 import KetoIcon from "../../components/keto-icon/keto-icon.component";
 import ProductsPreview from "../../components/products-preview/products-preview.component";
-
+import Zoom from 'react-reveal/Zoom';
 const SugarFree = Award(SugarFreeIcon);
 const GlutenFree = Award(GlutenFreeIcon);
 const NonGmo = Award(NomGomIcon);
@@ -19,12 +19,14 @@ const HomePage = () => (
   <HomeContainer>
     <ImagesSlider />
     <ContentContainer>
-      <AwardContainer>
-        <SugarFree text={"Sugar Free"} color={"#C5DB74;"} />
-        <GlutenFree text={"Gluten Free"} color={"#C5DB74;"} />
-        <NonGmo text={"NONGMO"} color={"#C5DB74;"} />
-        <Keto text={"Keto Option"} color={"#C5DB74;"} />
-      </AwardContainer>
+      <Zoom>
+        <AwardContainer>
+          <SugarFree text={"Sugar Free"} color={"#C5DB74;"} />
+          <GlutenFree text={"Gluten Free"} color={"#C5DB74;"} />
+          <NonGmo text={"NONGMO"} color={"#C5DB74;"} />
+          <Keto text={"Keto Option"} color={"#C5DB74;"} />
+        </AwardContainer>
+      </Zoom>
       <ProductsPreview />
       <BestProducts />
     </ContentContainer>
