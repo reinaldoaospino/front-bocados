@@ -21,7 +21,10 @@ export const ProductsWrapped = styled.div`
   }
 `;
 
-export const ImagenExample = styled.div`
-  border: 1px solid;
+
+
+export const ImagenExample = styled.img`
   height: 300px;
+  width:100%;
 `;
+

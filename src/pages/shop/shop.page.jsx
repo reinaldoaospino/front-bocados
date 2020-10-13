@@ -4,6 +4,7 @@ import {
   ImagenExample,
   ProductsWrapped,
   ShopPageContainer,
+  ImagenWrapped,
 } from "./shop.styles";
 import ProductCard from "../../components/product-card/product-card.component";
 import UrlImage1 from "../../assets/product_1.png";
@@ -12,10 +13,10 @@ import UrlImage3 from "../../assets/product_3.png";
 import UrlImage4 from "../../assets/product_4.png";
 import UrlImage5 from "../../assets/product_5.png";
 import UrlImage6 from "../../assets/product_6.png";
-
+import ImagenPreview from "../../assets/shop_header.png";
 const ShopPage = () => (
   <div>
-    <ImagenExample />
+      <ImagenExample src={ImagenPreview} />
     <ShopPageContainer>
       <CategoryComponent />
       <ProductsWrapped>
