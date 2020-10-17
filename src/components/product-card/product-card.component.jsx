@@ -12,7 +12,6 @@ import Zoom from 'react-reveal/Zoom';
 
 const ProductCard = ({ urlImage, ProducName }) => (
   <Zoom>
-
     <ProductImageWrap>
       <ImageWrap>
         <ProductImg src={urlImage} />
