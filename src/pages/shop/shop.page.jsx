@@ -42,7 +42,7 @@ const ShopPage = () => (
         <ProductCard urlImage={UrlImage7} ProducName={"CheeseCake"} />
         <ProductCard urlImage={UrlImage8} ProducName={"cocadas"} />
         <ProductCard urlImage={UrlImage9} ProducName={"red velvet"} />
-        <ProductCard urlImage={UrlImage10} ProducName={"¿Name?"} />
+        <ProductCard urlImage={UrlImage10} ProducName={"Chickpea cake"} />
         <ProductCard urlImage={UrlImage11} ProducName={"¿Name?"} />
         <ProductCard urlImage={UrlImage12} ProducName={"¿Name?"} />
       </ProductsWrapped>

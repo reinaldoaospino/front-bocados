@@ -7,6 +7,7 @@ import ShopPage from './pages/shop/shop.page';
 import Footer from './components/footer/footer.component';
 import ContactPage from './pages/contact/contact.page';
 import AboutPage from './pages/about/about.page';
+import ProductPage from './pages/product/product.page';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/front-bocados/shop' component={ShopPage} />
           <Route path='/front-bocados/contact' component={ContactPage} />
           <Route path='/front-bocados/about' component={AboutPage} />
+          <Route path='/front-bocados/product' component={ProductPage} />
         </Switch>
       </div>
       <Footer />
