@@ -4,16 +4,10 @@ import {
   ImageWrap,
   DescriptionWrap,
   Price,
-  OptionsWrap,
   Description,
   PriceWrap,
-  ShopOptionWrap,
   ProductImg
 } from "./product-card.styles";
-
-import ShopIcon from "../shop-icon/shop-icon.component";
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import CustomButton from "../custom-button/custom-button.component";
 import Zoom from 'react-reveal/Zoom';
 
 const ProductCard = ({ urlImage, ProducName }) => (
@@ -29,15 +23,6 @@ const ProductCard = ({ urlImage, ProducName }) => (
       <PriceWrap>
         <Price>$ 100</Price>
       </PriceWrap>
-      <OptionsWrap>
-        <ShopOptionWrap>
-          <CustomButton text='shop' icon={<ShopIcon color='white' />} />
-        </ShopOptionWrap>
-
-        <ShopOptionWrap>
-        <CustomButton text='Details' icon={<VisibilityIcon color='white' />} />
-        </ShopOptionWrap>
-      </OptionsWrap>
     </ProductImageWrap>
   </Zoom>
 );
