@@ -2,7 +2,7 @@ import React from "react";
 import { HomeContainer, AwardContainer, ContentContainer } from "./home.styles";
 
 import ImagesSlider from "../../components/images-slider/images-slider.component";
-import BestProducts from "../../components/best-products/best-products.component";
+import BestProducts from "../../components/product-cards-preview/product-cards-preview.component";
 import Award from "../../components/award/award.component";
 import NomGomIcon from "../../components/non-gmo-icon/non-gmo-icon.component";
 import GlutenFreeIcon from "../../components/gluten-free-icon/gluten-free-icon.component";
@@ -28,7 +28,7 @@ const HomePage = () => (
         </AwardContainer>
       </Zoom>
       <ProductsPreview />
-      <BestProducts />
+      <BestProducts title={"Featured Products"} />
     </ContentContainer>
   </HomeContainer>
 );

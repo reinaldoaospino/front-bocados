@@ -1,5 +1,5 @@
 import React from 'react';
-import { BestProductsContainer, TitleWrap, Title, ProductsWrap } from './best-products.styles';
+import { BestProductsContainer, TitleWrap, Title, ProductsWrap } from './product-cards-preview.styles';
 import ProductCard from '../product-card/product-card.component';
 import UrlImage1 from "../../assets/product_1.png";
 import UrlImage2 from "../../assets/product_2.png";
@@ -9,10 +9,10 @@ import UrlImage5 from "../../assets/product_5.png";
 import UrlImage6 from "../../assets/product_6.png";
 
 
-const BestProducts = () => (
+const BestProducts = ({title}) => (
     <BestProductsContainer>
         <TitleWrap>
-            <Title>Featured Products</Title>
+            <Title>{title}</Title>
         </TitleWrap>
         <ProductsWrap>
             <ProductCard urlImage={UrlImage1} ProducName={"CARB CHOCOLATE CHIP CAKE"} />
