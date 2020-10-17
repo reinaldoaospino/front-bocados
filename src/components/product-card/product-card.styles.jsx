@@ -48,8 +48,25 @@ export const Price = styled.span`
   font-size: 1.1em;
   color: #82ae46;
   font-family: "Poppins", Arial, sans-serif;
+  ${ProductImageWrap}: hover & {
+    display: none;
+  }
 `;
 
 export const PriceWrap = styled.div`
   text-align: center;
+`;
+
+
+
+export const OptionsWrap = styled.div`
+  display: none;
+
+  ${ProductImageWrap}: hover & {
+    display: block;
+  }
+`;
+
+export const ShopOptionWrap = styled.div`
+
 `;
