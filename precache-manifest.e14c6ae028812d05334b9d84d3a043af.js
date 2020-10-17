@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec0a1386e9f76f8c93fad26adfe2db4d",
+    "revision": "f54fd6f24fefec66dbab22c13fd5b8e3",
     "url": "/front-bocados/index.html"
   },
   {
-    "revision": "f701645d8602dd23cf9d",
+    "revision": "18f76b595200b6902a9b",
     "url": "/front-bocados/static/css/2.b0d70484.chunk.css"
   },
   {
-    "revision": "d641805bab819d91d56f",
-    "url": "/front-bocados/static/css/main.f265318b.chunk.css"
+    "revision": "961b5dab103a0fe65d16",
+    "url": "/front-bocados/static/css/main.5e7a56d8.chunk.css"
   },
   {
-    "revision": "f701645d8602dd23cf9d",
-    "url": "/front-bocados/static/js/2.94516595.chunk.js"
+    "revision": "18f76b595200b6902a9b",
+    "url": "/front-bocados/static/js/2.30c55204.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/front-bocados/static/js/2.94516595.chunk.js.LICENSE.txt"
+    "url": "/front-bocados/static/js/2.30c55204.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d641805bab819d91d56f",
-    "url": "/front-bocados/static/js/main.f3644768.chunk.js"
+    "revision": "961b5dab103a0fe65d16",
+    "url": "/front-bocados/static/js/main.9b49a68b.chunk.js"
   },
   {
     "revision": "9f00ae8d0710609710dd",
     "url": "/front-bocados/static/js/runtime-main.a81ebc30.js"
+  },
+  {
+    "revision": "c4d46a3c39d0c2205fa12724a3d49551",
+    "url": "/front-bocados/static/media/contact_img.c4d46a3c.PNG"
   },
   {
     "revision": "8ff6992dbdf0aafb009cabefd340efb9",
@@ -34,22 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2f1ebf37d95ebfd16d67f341e5fad900",
     "url": "/front-bocados/static/media/logoHeader.2f1ebf37.svg"
-  },
-  {
-    "revision": "2493a3962347c58452fe412ac32f579a",
-    "url": "/front-bocados/static/media/preview_1.2493a396.svg"
-  },
-  {
-    "revision": "fc627e435b723e21c8664707ac0071ee",
-    "url": "/front-bocados/static/media/preview_2.fc627e43.svg"
-  },
-  {
-    "revision": "59dbf0a2d4a3a3d0d7e9e4d48b504193",
-    "url": "/front-bocados/static/media/preview_3.59dbf0a2.svg"
-  },
-  {
-    "revision": "0b1bd501d5e1e175e6e1f398800915b1",
-    "url": "/front-bocados/static/media/preview_4.0b1bd501.svg"
   },
   {
     "revision": "67af64b5b3b4b0b24e62215c4b30a0ce",
@@ -66,6 +54,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bbd1960a027cd5b687350d1be9eb573f",
     "url": "/front-bocados/static/media/product_1.bbd1960a.png"
+  },
+  {
+    "revision": "c8c214cc24f47c9d2f10b0c736869f25",
+    "url": "/front-bocados/static/media/product_10.c8c214cc.png"
+  },
+  {
+    "revision": "0905614860628c10f2d8b8ccc9aab7c6",
+    "url": "/front-bocados/static/media/product_11.09056148.png"
+  },
+  {
+    "revision": "bc57e2341290a19683bf3b640ad83cb6",
+    "url": "/front-bocados/static/media/product_12.bc57e234.png"
   },
   {
     "revision": "21d1ddd969d004fd1d5991ab62fbd6da",
@@ -88,8 +88,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/media/product_6.24dfae64.png"
   },
   {
-    "revision": "d9af248223b3dd8a1add99e22b3084f9",
-    "url": "/front-bocados/static/media/video_1.d9af2482.mp4"
+    "revision": "f7ce7747074de1a81fc2a9283109f0c3",
+    "url": "/front-bocados/static/media/product_7.f7ce7747.png"
+  },
+  {
+    "revision": "edff0a691c301649feda9ecdc2437152",
+    "url": "/front-bocados/static/media/product_8.edff0a69.png"
+  },
+  {
+    "revision": "dcfba9e06e2253374c76d291e27ee582",
+    "url": "/front-bocados/static/media/product_9.dcfba9e0.png"
+  },
+  {
+    "revision": "9f89de27de69ad85c6b85019100fa0ec",
+    "url": "/front-bocados/static/media/shop_header.9f89de27.png"
+  },
+  {
+    "revision": "3b045b781cda9e14a308627fdccae893",
+    "url": "/front-bocados/static/media/singleProduct.3b045b78.png"
   },
   {
     "revision": "e73ee717f5918b5400192ba17ba05091",
@@ -98,9 +114,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "adb8b8e36f2cc3c796566a7dfbae58a0",
     "url": "/front-bocados/static/media/video_3.adb8b8e3.mp4"
-  },
-  {
-    "revision": "e9676bdbd15d61f13ac3909ccf597321",
-    "url": "/front-bocados/static/media/video_4.e9676bdb.mp4"
   }
 ]);
