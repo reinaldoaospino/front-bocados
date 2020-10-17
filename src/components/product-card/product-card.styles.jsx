@@ -53,12 +53,16 @@ export const PriceWrap = styled.div`
   text-align: center;
 `;
 
-export const OptionsWrap = styled.div``;
-
-export const ShopOptionWrap = styled.div`
+export const OptionsWrap = styled.div`
   display: none;
 
   ${ProductImageWrap}: hover & {
     display: block;
+    display: flex;
+    justify-content: space-between;
   }
+`;
+
+export const ShopOptionWrap = styled.div`
+
 `;

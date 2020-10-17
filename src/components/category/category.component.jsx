@@ -2,24 +2,22 @@ import React from "react";
 import {
   CategoryContainer,
   CategoryItem,
-  CategoryWrapped,
+  CategoryTitle,
 } from "./category.styles";
 
 
 const CategoryComponent = ({ selected }) => (
   <CategoryContainer>
-    <CategoryWrapped selected={true}>
-      <CategoryItem >ALL</CategoryItem>
-    </CategoryWrapped>
-    <CategoryWrapped>
+    <CategoryTitle>Categories</CategoryTitle>
+      <CategoryItem selected={true} >ALL</CategoryItem>
       <CategoryItem>Brownie</CategoryItem>
-    </CategoryWrapped>
-    <CategoryWrapped>
       <CategoryItem>Cookies</CategoryItem>
-    </CategoryWrapped>
-    <CategoryWrapped>
-      <CategoryItem>BREAD</CategoryItem>
-    </CategoryWrapped>
+      <CategoryItem>Bread</CategoryItem>
+      <CategoryItem>Cake</CategoryItem>
+      <CategoryItem>Mini desserts</CategoryItem>
+      <CategoryItem>Cupcake</CategoryItem>
+      <CategoryItem>Sweet box</CategoryItem>
+      <CategoryItem>Tequeños</CategoryItem> 
   </CategoryContainer>
 );
 

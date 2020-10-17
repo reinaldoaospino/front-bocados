@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ShopPageContainer = styled.div`
   max-width: 1000px;
   margin: auto;
+  position: relative;
 `;
 
 export const ProductsWrapped = styled.div`
