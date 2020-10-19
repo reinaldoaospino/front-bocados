@@ -52,7 +52,7 @@ const ButtonMenu = (props) => {
         <MenuItem onClick={() => linkClick("contact")}>Contact</MenuItem>
         <MenuItem onClick={() => linkClick("about")}>About</MenuItem>
         {location.pathname.includes("shop") ? (
-          <MenuItem onClick={() => linkClick("about")}>Category</MenuItem>
+          <MenuItem onClick={() => linkClick("")}>Category</MenuItem>
         ) : null}
       </Menu>
     </MenuButtonContainer>
