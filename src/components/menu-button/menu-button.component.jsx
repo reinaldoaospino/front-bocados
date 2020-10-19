@@ -3,18 +3,26 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { MenuButtonContainer } from "./menu-button.style";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-const ButtonMenu = () => {
+const ButtonMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const history = useHistory();
+  const location = useLocation();
+  console.log(location.pathname.includes("shop"));
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
   const linkClick = (option) => {
-    history.push(`/front-bocados/${option}`);
+    if(option.includes("home")){
+      history.push(`/front-bocados/`);
+    }else{
+      history.push(`/front-bocados/${option}`);
+    }
+   
     setAnchorEl(null);
   };
 
@@ -39,10 +47,13 @@ const ButtonMenu = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={()=>linkClick("home")}>Home</MenuItem>
-        <MenuItem onClick={()=>linkClick("shop")}>Shop</MenuItem>
-        <MenuItem onClick={()=>linkClick("contact")}>Contact</MenuItem>
-        <MenuItem onClick={()=>linkClick("about")}>About</MenuItem>
+        <MenuItem onClick={() => linkClick("home")}>Home</MenuItem>
+        <MenuItem onClick={() => linkClick("shop")}>Shop</MenuItem>
+        <MenuItem onClick={() => linkClick("contact")}>Contact</MenuItem>
+        <MenuItem onClick={() => linkClick("about")}>About</MenuItem>
+        {location.pathname.includes("shop") ? (
+          <MenuItem onClick={() => linkClick("about")}>Category</MenuItem>
+        ) : null}
       </Menu>
     </MenuButtonContainer>
   );
