@@ -3,7 +3,6 @@ import React from "react";
 const GlutenFreeIcon = () => (
   <svg
     id="Capa_1"
-    enable-background="new 0 0 512 512"
     height="100"
     viewBox="0 0 512 512"
     width="80"
