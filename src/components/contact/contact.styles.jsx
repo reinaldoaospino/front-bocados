@@ -13,11 +13,19 @@ export const InputWrapped = styled.div`
   @media (max-width: 1038px) {
     width: 90%;
   }
+
+  @media (max-width: 880px) {
+    width: 100%;
+  }
 `;
 
 export const ButtonWrapped = styled.div`
   margin-bottom: 10px;
   @media (max-width: 1038px) {
     width: 90%;
+  }
+
+  @media (max-width: 880px) {
+    width: 100%;
   }
 `;
