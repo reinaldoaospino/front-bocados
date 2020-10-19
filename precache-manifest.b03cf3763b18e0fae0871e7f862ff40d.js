@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0f0f8b2a439b8ece4f5e7e5904cbc19",
+    "revision": "678e928ce4b5e616233413a6c8f6ae91",
     "url": "/front-bocados/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/css/2.b0d70484.chunk.css"
   },
   {
-    "revision": "2d29bc355af626e58ae9",
+    "revision": "6e2a05afa2dddcc25fc3",
     "url": "/front-bocados/static/css/main.5e7a56d8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/js/2.994a7f17.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d29bc355af626e58ae9",
-    "url": "/front-bocados/static/js/main.25ebce49.chunk.js"
+    "revision": "6e2a05afa2dddcc25fc3",
+    "url": "/front-bocados/static/js/main.67379639.chunk.js"
   },
   {
     "revision": "9f00ae8d0710609710dd",
