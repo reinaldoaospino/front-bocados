@@ -19,11 +19,13 @@ import UrlImage10 from "../../assets/product_10.png";
 import UrlImage11 from "../../assets/product_11.png";
 import UrlImage12 from "../../assets/product_12.png";
 import ImagenPreview from "../../assets/shop_header.png";
+import CategoryButton from "../../components/category-button/category-button.component";
 
 const ShopPage = () => (
   <div>
     <ImagenExample src={ImagenPreview} />
     <ShopPageContainer>
+      <CategoryButton/>
       <CategoryComponent />
       <ProductsWrapped>
         <ProductCard

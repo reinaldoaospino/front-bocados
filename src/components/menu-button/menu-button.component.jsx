@@ -10,7 +10,6 @@ const ButtonMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const history = useHistory();
   const location = useLocation();
-  console.log(location.pathname.includes("shop"));
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
