@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
 export const ShopPageContainer = styled.div`
-  max-width: 1000px;
-  margin: auto;
-  position: relative;
+  display: grid;
+  grid-template-columns: 25% 62%;
+  @media (max-width: 916px) {
+
+    max-width: 1000px;
+    margin: auto;
+    grid-template-columns:none;
+
+  }
 `;
 
 export const ProductsWrapped = styled.div`
