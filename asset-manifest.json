@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/front-bocados/static/css/main.5e7a56d8.chunk.css",
-    "main.js": "/front-bocados/static/js/main.67379639.chunk.js",
-    "main.js.map": "/front-bocados/static/js/main.67379639.chunk.js.map",
+    "main.js": "/front-bocados/static/js/main.04ca93a2.chunk.js",
+    "main.js.map": "/front-bocados/static/js/main.04ca93a2.chunk.js.map",
     "runtime-main.js": "/front-bocados/static/js/runtime-main.a81ebc30.js",
     "runtime-main.js.map": "/front-bocados/static/js/runtime-main.a81ebc30.js.map",
     "static/css/2.b0d70484.chunk.css": "/front-bocados/static/css/2.b0d70484.chunk.css",
     "static/js/2.994a7f17.chunk.js": "/front-bocados/static/js/2.994a7f17.chunk.js",
     "static/js/2.994a7f17.chunk.js.map": "/front-bocados/static/js/2.994a7f17.chunk.js.map",
     "index.html": "/front-bocados/index.html",
-    "precache-manifest.b03cf3763b18e0fae0871e7f862ff40d.js": "/front-bocados/precache-manifest.b03cf3763b18e0fae0871e7f862ff40d.js",
+    "precache-manifest.f40151cdc9813d83e1f7828ba6061205.js": "/front-bocados/precache-manifest.f40151cdc9813d83e1f7828ba6061205.js",
     "service-worker.js": "/front-bocados/service-worker.js",
     "static/css/2.b0d70484.chunk.css.map": "/front-bocados/static/css/2.b0d70484.chunk.css.map",
     "static/css/main.5e7a56d8.chunk.css.map": "/front-bocados/static/css/main.5e7a56d8.chunk.css.map",
@@ -42,6 +42,6 @@
     "static/css/2.b0d70484.chunk.css",
     "static/js/2.994a7f17.chunk.js",
     "static/css/main.5e7a56d8.chunk.css",
-    "static/js/main.67379639.chunk.js"
+    "static/js/main.04ca93a2.chunk.js"
   ]
 }
