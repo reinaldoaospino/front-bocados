@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   text-align: center;
   color: black;
-  box-shadow: 10px 10px 5px -5px rgba(242,242,242,1);
+  box-shadow: 0px 10px 5px -5px rgba(242,242,242,1);
 `;
 
 export const LogoWrap = styled.div``;

@@ -23,8 +23,13 @@ export const AboutImage = styled.img`
     margin-left: 10px
   }
   @media (max-width: 916px) {
-     width: 50%; 
-    margin: auto;
+    width: 329px;
+    height: 300px;
+     margin: auto;
+  }
+
+  @media (max-width: 330px) {
+    height: auto;
   }
 
 }
