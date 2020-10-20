@@ -9,7 +9,7 @@ export const ContactPageWrapped = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 65px 0px;
+  padding: 99px 0px;
 
   @media (max-width: 880px) {
     grid-template-columns: 100%;

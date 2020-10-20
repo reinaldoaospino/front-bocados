@@ -2,11 +2,16 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   display: grid;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+  z-index: 99;
   grid-template-columns: 50% 50%;
   align-items: center;
   text-align: center;
   color: black;
-  box-shadow: 10px 10px 5px 0px rgba(240,240,240,1);
+  box-shadow: 10px 10px 5px -5px rgba(242,242,242,1);
 `;
 
 export const LogoWrap = styled.div``;
