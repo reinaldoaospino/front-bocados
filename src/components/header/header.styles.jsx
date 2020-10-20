@@ -6,6 +6,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   text-align: center;
   color: black;
+  box-shadow: 10px 10px 5px 0px rgba(240,240,240,1);
 `;
 
 export const LogoWrap = styled.div``;
