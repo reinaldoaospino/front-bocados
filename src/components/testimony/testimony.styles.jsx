@@ -19,6 +19,14 @@ display:grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 40px;
 margin-top: 30px;
+
+@media (max-width: 1030px) {
+    margin: 0px 10px;
+  }
+
+  @media (max-width: 916px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 
