@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/front-bocados/static/css/main.5e7a56d8.chunk.css",
-    "main.js": "/front-bocados/static/js/main.04ca93a2.chunk.js",
-    "main.js.map": "/front-bocados/static/js/main.04ca93a2.chunk.js.map",
+    "main.css": "/front-bocados/static/css/main.3074d86e.chunk.css",
+    "main.js": "/front-bocados/static/js/main.7e7d3ea4.chunk.js",
+    "main.js.map": "/front-bocados/static/js/main.7e7d3ea4.chunk.js.map",
     "runtime-main.js": "/front-bocados/static/js/runtime-main.a81ebc30.js",
     "runtime-main.js.map": "/front-bocados/static/js/runtime-main.a81ebc30.js.map",
     "static/css/2.b0d70484.chunk.css": "/front-bocados/static/css/2.b0d70484.chunk.css",
-    "static/js/2.994a7f17.chunk.js": "/front-bocados/static/js/2.994a7f17.chunk.js",
-    "static/js/2.994a7f17.chunk.js.map": "/front-bocados/static/js/2.994a7f17.chunk.js.map",
+    "static/js/2.fb9fbf6c.chunk.js": "/front-bocados/static/js/2.fb9fbf6c.chunk.js",
+    "static/js/2.fb9fbf6c.chunk.js.map": "/front-bocados/static/js/2.fb9fbf6c.chunk.js.map",
     "index.html": "/front-bocados/index.html",
-    "precache-manifest.f40151cdc9813d83e1f7828ba6061205.js": "/front-bocados/precache-manifest.f40151cdc9813d83e1f7828ba6061205.js",
+    "precache-manifest.47c0184c4cd06e1480f406c2ecc3a1e7.js": "/front-bocados/precache-manifest.47c0184c4cd06e1480f406c2ecc3a1e7.js",
     "service-worker.js": "/front-bocados/service-worker.js",
     "static/css/2.b0d70484.chunk.css.map": "/front-bocados/static/css/2.b0d70484.chunk.css.map",
-    "static/css/main.5e7a56d8.chunk.css.map": "/front-bocados/static/css/main.5e7a56d8.chunk.css.map",
-    "static/js/2.994a7f17.chunk.js.LICENSE.txt": "/front-bocados/static/js/2.994a7f17.chunk.js.LICENSE.txt",
+    "static/css/main.3074d86e.chunk.css.map": "/front-bocados/static/css/main.3074d86e.chunk.css.map",
+    "static/js/2.fb9fbf6c.chunk.js.LICENSE.txt": "/front-bocados/static/js/2.fb9fbf6c.chunk.js.LICENSE.txt",
     "static/media/contact_img.PNG": "/front-bocados/static/media/contact_img.c4d46a3c.PNG",
     "static/media/logo.png": "/front-bocados/static/media/logo.8ff6992d.png",
     "static/media/logoHeader.svg": "/front-bocados/static/media/logoHeader.2f1ebf37.svg",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.a81ebc30.js",
     "static/css/2.b0d70484.chunk.css",
-    "static/js/2.994a7f17.chunk.js",
-    "static/css/main.5e7a56d8.chunk.css",
-    "static/js/main.04ca93a2.chunk.js"
+    "static/js/2.fb9fbf6c.chunk.js",
+    "static/css/main.3074d86e.chunk.css",
+    "static/js/main.7e7d3ea4.chunk.js"
   ]
 }
