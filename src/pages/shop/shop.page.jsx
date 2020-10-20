@@ -23,7 +23,6 @@ import CategoryButton from "../../components/category-button/category-button.com
 
 const ShopPage = () => (
   <div>
-    <ImagenExample src={ImagenPreview} />
     <ShopPageContainer>
       <CategoryButton/>
       <CategoryComponent />
