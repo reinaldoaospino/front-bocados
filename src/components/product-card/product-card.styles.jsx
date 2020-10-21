@@ -10,7 +10,6 @@ export const ProductImageWrap = styled.div`
   display: grid;
   grid-gap: 6px;
   position: relative;
-  background: #f7f6f2;
   box-shadow: 10px 10px 5px -7px rgba(242,242,242,1);
   &:hover{
     cursor:pointer;
