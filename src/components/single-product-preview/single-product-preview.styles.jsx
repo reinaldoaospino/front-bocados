@@ -14,6 +14,8 @@ export const SingleProductPreviewContainer = styled.div`
 `;
 
 export const ImgWrapped = styled.div`
+box-shadow: 10px 10px 5px -7px rgba(242,242,242,1);
+border: 1px solid #f0f0f0;
   @media (max-width: 900px) {
     width: 64%;
     margin: auto;

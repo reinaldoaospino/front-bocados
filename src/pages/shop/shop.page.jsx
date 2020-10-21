@@ -44,8 +44,8 @@ const ShopPage = () => (
         <ProductCard urlImage={UrlImage8} ProducName={"cocadas"} />
         <ProductCard urlImage={UrlImage9} ProducName={"red velvet"} />
         <ProductCard urlImage={UrlImage10} ProducName={"Chickpea cake"} />
-        <ProductCard urlImage={UrlImage11} ProducName={"¿Name?"} />
-        <ProductCard urlImage={UrlImage12} ProducName={"¿Name?"} />
+        <ProductCard urlImage={UrlImage11} ProducName={"MINI DESSERT"} />
+        <ProductCard urlImage={UrlImage12} ProducName={"MINI DESSERT"} />
       </ProductsWrapped>
     </ShopPageContainer>
   </div>
