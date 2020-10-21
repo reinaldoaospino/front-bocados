@@ -81,7 +81,7 @@ export const MenuWrapped = styled.div`
 export const Title = styled.span`
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.1em;
   align-self: center;
 `;
 
