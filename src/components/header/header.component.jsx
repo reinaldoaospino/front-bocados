@@ -9,6 +9,7 @@ import {
   LinkOption,
   Logo,
   CartItems,
+  MobileCard
 } from "./header.styles";
 import LogoHeader from "../../assets/logoHeader.svg";
 import ShopIcon from "../shop-icon/shop-icon.component";
@@ -20,6 +21,10 @@ const LinkStyles = {
 
 const Header = () => (
   <HeaderContainer>
+    <MobileCard>
+      <ShopIcon color="black" />
+      <CartItems>[0]</CartItems>
+    </MobileCard>
     <LogoWrap>
       <Link to="/front-bocados">
         <Logo ImageUrl={LogoHeader} />
@@ -39,12 +44,12 @@ const Header = () => (
           </Link>
         </MenuLI>
         <MenuLI>
-          <Link style={LinkStyles} to="/front-bocados/contact" >
+          <Link style={LinkStyles} to="/front-bocados/contact">
             <LinkOption>Contact</LinkOption>
           </Link>
         </MenuLI>
         <MenuLI>
-          <Link style={LinkStyles} to="/front-bocados/about" >
+          <Link style={LinkStyles} to="/front-bocados/about">
             <LinkOption>About</LinkOption>
           </Link>
         </MenuLI>

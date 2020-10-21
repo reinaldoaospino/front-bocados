@@ -11,7 +11,14 @@ export const HeaderContainer = styled.div`
   align-items: center;
   text-align: center;
   color: black;
-  box-shadow: 0px 10px 5px -5px rgba(242,242,242,1);
+  box-shadow: 0px 10px 5px -5px rgba(242, 242, 242, 1);
+
+  @media (max-width: 916px) {
+  grid-template-columns: 20% 60% 20%;
+  }
+  @media (max-width: 399px) {
+    grid-template-columns:16% 57% 31%;
+    }
 `;
 
 export const LogoWrap = styled.div``;
@@ -67,4 +74,11 @@ export const CartItems = styled.span``;
 export const ProductName = styled.span`
   font-family: "Sansita Swashed", cursive;
   font-size: 2.5em;
+`;
+
+export const MobileCard = styled.div`
+  display: none;
+  @media (max-width: 916px) {
+    display: block;
+  }
 `;
