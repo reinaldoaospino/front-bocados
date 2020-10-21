@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const ContactPageContainer = styled.div`
   background: #f7f6f2;
   height: 652px;
+  @media (max-width: 880px) {
+    height: 1000px;
+  }
 `;
 
 export const ContactPageWrapped = styled.div`
