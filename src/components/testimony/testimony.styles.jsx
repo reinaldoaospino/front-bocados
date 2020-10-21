@@ -8,6 +8,7 @@ text-align: center;
 max-width: 1000px;
 margin: auto;
 margin-top:80px;
+margin-bottom: 80px;
 `
 
 export const TestimonyTitle1 = styled.h3``

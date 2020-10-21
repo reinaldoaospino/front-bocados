@@ -4,6 +4,7 @@ export const ProductPageContainer = styled.div`
 max-width: 1000px;
 margin: auto;
 margin-top: 100px;
+margin-bottom: 80px;
 
 @media (max-width: 900px){
     max-width: 720px;

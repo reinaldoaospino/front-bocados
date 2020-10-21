@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ShopPageContainer = styled.div`
   display: grid;
   grid-template-columns: 25% 62%;
+  margin-bottom: 80px;
   @media (max-width: 916px) {
 
     max-width: 1000px;

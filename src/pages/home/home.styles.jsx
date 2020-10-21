@@ -18,5 +18,6 @@ export const ContentContainer = styled.div`
 max-width: 1000px;
 margin: auto;
 background: white;
+margin-bottom: 80px;
 
 `;

@@ -9,7 +9,6 @@ export const FooterContainer = styled.div`
     rgba(234, 233, 233, 1) 0%,
     rgba(228, 218, 197, 1) 100%
   );
-  margin-top: 80px;
   font-family: "Crimson Text", serif;
 
   @media (max-width: 1236px) {

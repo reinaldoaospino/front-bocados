@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContactPageContainer = styled.div`
   background: #f7f6f2;
+  height: 652px;
 `;
 
 export const ContactPageWrapped = styled.div`
