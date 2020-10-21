@@ -51,6 +51,10 @@ const Footer = () => (
         {" "}
         <Link style={LinkStyles} to="/front-bocados/about">About</Link>{" "}
       </SpanItem>
+      <SpanItem>
+        {" "}
+        <Link style={LinkStyles} to="/front-bocados/product">Product</Link>{" "}
+      </SpanItem>
     </MenuWrapped>
 
     <ContactWrapped>
