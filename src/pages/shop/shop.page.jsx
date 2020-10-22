@@ -40,12 +40,12 @@ const ShopPage = () => (
           ProducName={"ALMOND CHOCOLATE CHIPS COOKIES"}
         />
 
-        <ProductCard urlImage={UrlImage7} ProducName={"CheeseCake"} />
-        <ProductCard urlImage={UrlImage8} ProducName={"cocadas"} />
-        <ProductCard urlImage={UrlImage9} ProducName={"red velvet"} />
-        <ProductCard urlImage={UrlImage10} ProducName={"Chickpea cake"} />
+        <ProductCard urlImage={UrlImage7} ProducName={"Cocadas"} />
+        <ProductCard urlImage={UrlImage8} ProducName={"cheeseCake"} />
+        <ProductCard urlImage={UrlImage9} ProducName={"Chickpea cake"} />
+        <ProductCard urlImage={UrlImage10} ProducName={"Tiramisu"} />
         <ProductCard urlImage={UrlImage11} ProducName={"MINI DESSERT"} />
-        <ProductCard urlImage={UrlImage12} ProducName={"MINI DESSERT"} />
+        <ProductCard urlImage={UrlImage12} ProducName={"red velvet"} />
       </ProductsWrapped>
     </ShopPageContainer>
   </div>
