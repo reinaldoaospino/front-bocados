@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac6acf77996298bdafe03da32df4f6a7",
+    "revision": "5a70a02c81d8334d93a8e06696756c52",
     "url": "/front-bocados/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/css/2.b0d70484.chunk.css"
   },
   {
-    "revision": "302ac45e01994b7caab5",
+    "revision": "8eb3884d157fa3f886bb",
     "url": "/front-bocados/static/css/main.3ade6e47.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/js/2.fb9fbf6c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "302ac45e01994b7caab5",
-    "url": "/front-bocados/static/js/main.7817dc76.chunk.js"
+    "revision": "8eb3884d157fa3f886bb",
+    "url": "/front-bocados/static/js/main.e4b732a9.chunk.js"
   },
   {
     "revision": "9f00ae8d0710609710dd",
     "url": "/front-bocados/static/js/runtime-main.a81ebc30.js"
   },
   {
-    "revision": "c4d46a3c39d0c2205fa12724a3d49551",
-    "url": "/front-bocados/static/media/contact_img.c4d46a3c.PNG"
+    "revision": "48ad99248e1aafa8e81103702d092d81",
+    "url": "/front-bocados/static/media/contact_img.48ad9924.PNG"
   },
   {
     "revision": "8ff6992dbdf0aafb009cabefd340efb9",
@@ -56,16 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/media/product_1.bbd1960a.png"
   },
   {
-    "revision": "c8c214cc24f47c9d2f10b0c736869f25",
-    "url": "/front-bocados/static/media/product_10.c8c214cc.png"
-  },
-  {
-    "revision": "0905614860628c10f2d8b8ccc9aab7c6",
-    "url": "/front-bocados/static/media/product_11.09056148.png"
+    "revision": "8277d85c81f326e115178ef085be66e7",
+    "url": "/front-bocados/static/media/product_10.8277d85c.png"
   },
   {
     "revision": "bc57e2341290a19683bf3b640ad83cb6",
-    "url": "/front-bocados/static/media/product_12.bc57e234.png"
+    "url": "/front-bocados/static/media/product_11.bc57e234.png"
+  },
+  {
+    "revision": "b0b2cd119aba1d53b3d5ec5f5b190f92",
+    "url": "/front-bocados/static/media/product_12.b0b2cd11.png"
   },
   {
     "revision": "21d1ddd969d004fd1d5991ab62fbd6da",
@@ -88,24 +88,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/front-bocados/static/media/product_6.24dfae64.png"
   },
   {
-    "revision": "f7ce7747074de1a81fc2a9283109f0c3",
-    "url": "/front-bocados/static/media/product_7.f7ce7747.png"
+    "revision": "9dd61a80af5c75b55852ce568d242994",
+    "url": "/front-bocados/static/media/product_7.9dd61a80.png"
   },
   {
-    "revision": "edff0a691c301649feda9ecdc2437152",
-    "url": "/front-bocados/static/media/product_8.edff0a69.png"
+    "revision": "d5f79359f9b9444b53408c5fa4adce37",
+    "url": "/front-bocados/static/media/product_8.d5f79359.png"
   },
   {
-    "revision": "dcfba9e06e2253374c76d291e27ee582",
-    "url": "/front-bocados/static/media/product_9.dcfba9e0.png"
+    "revision": "c3ba94c47b23bfc1898d12f46c7ccbb9",
+    "url": "/front-bocados/static/media/product_9.c3ba94c4.png"
   },
   {
     "revision": "9f89de27de69ad85c6b85019100fa0ec",
     "url": "/front-bocados/static/media/shop_header.9f89de27.png"
   },
   {
-    "revision": "3b045b781cda9e14a308627fdccae893",
-    "url": "/front-bocados/static/media/singleProduct.3b045b78.png"
+    "revision": "3f19b112071df7423b49f66fa4a7a1e0",
+    "url": "/front-bocados/static/media/singleProduct.3f19b112.png"
   },
   {
     "revision": "e73ee717f5918b5400192ba17ba05091",
