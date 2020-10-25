@@ -14,11 +14,15 @@ export const HeaderContainer = styled.div`
   box-shadow: 0px 10px 5px -5px rgba(242, 242, 242, 1);
 
   @media (max-width: 916px) {
-  grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% 20%;
   }
   @media (max-width: 399px) {
-    grid-template-columns:16% 57% 31%;
-    }
+    grid-template-columns: 16% 57% 31%;
+  }
+
+  @media (max-width: 290px) {
+    grid-template-columns: 9% 45% 69%;
+  }
 `;
 
 export const LogoWrap = styled.div``;
