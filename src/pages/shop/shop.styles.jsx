@@ -9,8 +9,10 @@ export const ShopPageContainer = styled.div`
     max-width: 1000px;
     margin: auto;
     grid-template-columns:none;
+    margin-bottom: 50px;
 
   }
+  
 `;
 
 export const ProductsWrapped = styled.div`

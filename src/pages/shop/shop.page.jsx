@@ -1,10 +1,6 @@
 import React from "react";
 import CategoryComponent from "../../components/category/category.component";
-import {
-  ImagenExample,
-  ProductsWrapped,
-  ShopPageContainer,
-} from "./shop.styles";
+import { ProductsWrapped, ShopPageContainer } from "./shop.styles";
 import ProductCard from "../../components/product-card/product-card.component";
 import UrlImage1 from "../../assets/product_1.png";
 import UrlImage2 from "../../assets/product_2.png";
@@ -18,13 +14,12 @@ import UrlImage9 from "../../assets/product_9.png";
 import UrlImage10 from "../../assets/product_10.png";
 import UrlImage11 from "../../assets/product_11.png";
 import UrlImage12 from "../../assets/product_12.png";
-import ImagenPreview from "../../assets/shop_header.png";
 import CategoryButton from "../../components/category-button/category-button.component";
 
 const ShopPage = () => (
   <div>
     <ShopPageContainer>
-      <CategoryButton/>
+      <CategoryButton />
       <CategoryComponent />
       <ProductsWrapped>
         <ProductCard
