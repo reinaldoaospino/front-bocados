@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a70a02c81d8334d93a8e06696756c52",
+    "revision": "197a97fc91e57373bafe2151b9a62d86",
     "url": "/front-bocados/index.html"
   },
   {
-    "revision": "88ba13059204f4574948",
+    "revision": "130af58261fc96b2fd11",
     "url": "/front-bocados/static/css/2.b0d70484.chunk.css"
   },
   {
-    "revision": "8eb3884d157fa3f886bb",
+    "revision": "2054343ee49e1527e651",
     "url": "/front-bocados/static/css/main.3ade6e47.chunk.css"
   },
   {
-    "revision": "88ba13059204f4574948",
-    "url": "/front-bocados/static/js/2.fb9fbf6c.chunk.js"
+    "revision": "130af58261fc96b2fd11",
+    "url": "/front-bocados/static/js/2.8af33b28.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/front-bocados/static/js/2.fb9fbf6c.chunk.js.LICENSE.txt"
+    "url": "/front-bocados/static/js/2.8af33b28.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8eb3884d157fa3f886bb",
-    "url": "/front-bocados/static/js/main.e4b732a9.chunk.js"
+    "revision": "2054343ee49e1527e651",
+    "url": "/front-bocados/static/js/main.05e56989.chunk.js"
   },
   {
     "revision": "9f00ae8d0710609710dd",
@@ -98,10 +98,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c3ba94c47b23bfc1898d12f46c7ccbb9",
     "url": "/front-bocados/static/media/product_9.c3ba94c4.png"
-  },
-  {
-    "revision": "9f89de27de69ad85c6b85019100fa0ec",
-    "url": "/front-bocados/static/media/shop_header.9f89de27.png"
   },
   {
     "revision": "3f19b112071df7423b49f66fa4a7a1e0",
