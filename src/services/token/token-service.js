@@ -16,4 +16,3 @@ export const GetToken = async () => {
     setTokenCache(response.data.token);
     return response.data.token;
 };
-
