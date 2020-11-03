@@ -1,4 +1,4 @@
-import { put } from 'redux-saga/effects';
+    import { put } from 'redux-saga/effects';
 import { setFetchingComplete, setFetchingSuccess, setIsFetching } from '../fetching/fetching.action';
 
 

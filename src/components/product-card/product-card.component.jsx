@@ -13,17 +13,17 @@ import CustomButton from "../custom-button/custom-button.component";
 
 import Zoom from 'react-reveal/Zoom';
 
-const ProductCard = ({ urlImage, ProducName }) => (
+const ProductCard = ({ urlImage, ProducName,price }) => (
   <Zoom>
     <ProductImageWrap>
       <ImageWrap>
-        <ProductImg src={urlImage} />
+        <ProductImg src={"data:image/png;base64,"+urlImage} />
       </ImageWrap>
       <DescriptionWrap>
         <Description>{ProducName}</Description>
       </DescriptionWrap>
       <PriceWrap>
-        <Price>$ 100</Price>
+        <Price>{`$ ${price}`}</Price>
       </PriceWrap>
       <OptionsWrap>
         <ShopOptionWrap>
