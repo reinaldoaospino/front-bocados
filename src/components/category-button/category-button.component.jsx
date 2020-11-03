@@ -2,17 +2,30 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import { CategoryButtonContainer } from "./category-button.styles";
+import {
+  CategoryButtonContainer,
+  NotSelectedCategory,
+  SelectedCategory,
+} from "./category-button.styles";
 import ListIcon from "@material-ui/icons/List";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCategoryCollection, selectCategoryFilter } from "../../redux/category/category.selector";
+import { setCategoryFilter } from "../../redux/category/category.action";
 
-const CategoryButton = () => {
+const CategoryButton = ({
+  categoriesCollection,
+  categoryFilter,
+  setCategoryFilter,
+}) => {
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
   const categoryClick = (option) => {
-    setAnchorEl(null);
+    setCategoryFilter(option);
   };
 
   const handleClose = () => {
@@ -26,7 +39,7 @@ const CategoryButton = () => {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <ListIcon style={{ fontSize: "2em" }} /> Category
+        <ListIcon style={{ fontSize: "2em" }} /> Categorias
       </Button>
       <Menu
         id="simple-menu"
@@ -35,18 +48,27 @@ const CategoryButton = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={() => categoryClick()}>ALL</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>BROWNIE</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>COOKIES</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>BREAD</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>CAKE</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>MINI DESSERTS</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>CUPCAKE</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>SWEET BOX</MenuItem>
-        <MenuItem onClick={() => categoryClick()}>TEQUEÑOS</MenuItem>
+        {categoriesCollection.map((c) => (
+          <MenuItem onClick={() => categoryClick(c.categoryName)}>
+            {categoryFilter === c.categoryName ? (
+              <SelectedCategory>{categoryFilter}</SelectedCategory>
+            ) : (
+              <NotSelectedCategory>{c.categoryName}</NotSelectedCategory>
+            )}
+          </MenuItem>
+        ))}
       </Menu>
     </CategoryButtonContainer>
   );
 };
 
-export default CategoryButton;
+const mapStateToProps = createStructuredSelector({
+  categoryFilter: selectCategoryFilter,
+  categoriesCollection: selectCategoryCollection
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  setCategoryFilter: (data) => dispatch(setCategoryFilter(data)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CategoryButton);

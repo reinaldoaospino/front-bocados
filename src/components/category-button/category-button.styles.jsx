@@ -11,3 +11,13 @@ margin-top:75px;
   }
 
 `
+
+export const SelectedCategory = styled.span`
+text-decoration: underline;
+text-transform: uppercase;
+`
+
+
+export const NotSelectedCategory = styled.span`
+text-transform: uppercase;
+`
