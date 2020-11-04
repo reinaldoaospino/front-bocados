@@ -1,7 +1,7 @@
 import FetchingActionTypes from './fetching.types';
 
 const INITIAL_STATE = {
-    isFetching: true,
+    isFetching: false,
     fetchingComplete: false,
     fetchingSuccess: false,
 }
