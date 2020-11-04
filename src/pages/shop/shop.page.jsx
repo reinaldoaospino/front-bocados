@@ -8,23 +8,33 @@ import { createStructuredSelector } from "reselect";
 import { selectProductCollection } from "../../redux/product/product.selector";
 import { selectCategoryFilter } from "../../redux/category/category.selector";
 
-const ShopPage = ({ productsCollection }) => (
-  <div>
-    <ShopPageContainer>
-      <CategoryButton />
-      <CategoryComponent />
-      <ProductsWrapped>
-        {productsCollection.map((p) => (
-          <ProductCard
-            urlImage={p.imagen}
-            ProducName={p.productName}
-            price={p.price}
-          />
-        ))}
-      </ProductsWrapped>
-    </ShopPageContainer>
-  </div>
-);
+const ShopPage = ({ productsCollection, categoryFilter }) => {
+  if (categoryFilter) {
+    productsCollection =
+      categoryFilter.toLowerCase() === "all"
+        ? productsCollection
+        : productsCollection.filter(
+            (p) => p.category.toLowerCase() === categoryFilter.toLowerCase()
+          );
+  }
+  return (
+    <div>
+      <ShopPageContainer>
+        <CategoryButton />
+        <CategoryComponent />
+        <ProductsWrapped>
+          {productsCollection.map((p) => (
+            <ProductCard
+              urlImage={p.imagen}
+              ProducName={p.productName}
+              price={p.price}
+            />
+          ))}
+        </ProductsWrapped>
+      </ShopPageContainer>
+    </div>
+  );
+};
 
 const mapStateToProps = createStructuredSelector({
   categoryFilter: selectCategoryFilter,

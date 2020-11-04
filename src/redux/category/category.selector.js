@@ -4,14 +4,9 @@ const selectCategory = state => state.category;
 
 const allObjet = { "id": 0, categoryName: "all" };
 
-export const selectCategoryCollectionFilter = createSelector(
+export const selectCategoryCollection = createSelector(
     [selectCategory],
     product => product.categoryCollection ? [allObjet, ...product.categoryCollection] : null
-)
-
-export const selectCategoryCollection = createSelector( //TODO ver si en verdad se usara este selector
-    [selectCategory],
-    product => product.categoryCollection
 );
 
 export const selectCategoryFilter = createSelector(
