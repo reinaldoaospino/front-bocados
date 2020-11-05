@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import CategoryComponent from "../../components/category/category.component";
 import {
+  PaginationWrap,
   ProductsWrapped,
   ShopPageContainer,
 } from "./shop.styles";
@@ -9,9 +10,12 @@ import ProductCard from "../../components/product-card/product-card.component";
 import CategoryButton from "../../components/category-button/category-button.component";
 import { createStructuredSelector } from "reselect";
 import { selectCategoryFilter } from "../../redux/category/category.selector";
+import { Pagination } from "@material-ui/lab";
 
 const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
-
+  const [page, setPage] = useState(1);
+  const [maxItem, setMaxItem] = useState(3);
+  const [pageValue, setPageValue] = useState(0);
 
   if (categoryFilter) {
     productsCollection =
@@ -22,13 +26,25 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
           );
   }
 
+  var max = maxItem;
+  var min = 0;
+
+  if (page > 1) {
+    max = page * maxItem;
+    min = max - maxItem;
+  }
+
+  const handlePaginationChange = (event, value) => {
+    setPage(value);
+  };
+
   return (
     <div>
       <ShopPageContainer>
         <CategoryButton />
         <CategoryComponent />
         <ProductsWrapped>
-          {productsCollection.map((p) => (
+          {productsCollection.slice(min, maxItem).map((p) => (
             <ProductCard
               urlImage={p.imagen}
               ProducName={p.productName}
@@ -38,6 +54,14 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
           ))}
         </ProductsWrapped>
       </ShopPageContainer>
+      <PaginationWrap>
+        <Pagination
+          count={Math.ceil(productsCollection.length / 5) + 1}
+          page={page}
+          variant="outlined"
+          onChange={handlePaginationChange}
+        />
+      </PaginationWrap>
     </div>
   );
 };
