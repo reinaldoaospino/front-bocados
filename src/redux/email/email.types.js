@@ -1,0 +1,6 @@
+const EmailActionTypes ={
+    FETCH_SEND_EMAIL_START:'FETCH_SEND_EMAIL_START',
+    FETCH_SEND_EMAIL_FAILURE:'FETCH_SEND_EMAIL_FAILURE'
+}
+
+export default EmailActionTypes;
