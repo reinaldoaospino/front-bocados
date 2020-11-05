@@ -37,14 +37,13 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
   const handlePaginationChange = (event, value) => {
     setPage(value);
   };
-
   return (
     <div>
       <ShopPageContainer>
         <CategoryButton />
         <CategoryComponent />
         <ProductsWrapped>
-          {productsCollection.slice(min, maxItem).map((p) => (
+          {productsCollection.slice(min, max).map((p) => (
             <ProductCard
               urlImage={p.imagen}
               ProducName={p.productName}
