@@ -14,22 +14,23 @@ import { createStructuredSelector } from 'reselect';
 import { selectIsFetching } from './redux/fetching/fetching.selector';
 import { CircularProgress } from '@material-ui/core';
 import { SpinnerContainer } from './App.style.js';
+import { selectProductCollection } from './redux/product/product.selector.js';
 
-function App({ fetchGetProdutcStart, isFeching }) {
+function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
   useEffect(() => {
     fetchGetProdutcStart();
   }, [fetchGetProdutcStart]);
 
   return isFeching ? (
     <SpinnerContainer className="App">
-      <CircularProgress/>
+      <CircularProgress />
     </SpinnerContainer>
   ) : <div>
       <Header />
       <div className="content">
         <Switch>
           <Route exact path='/front-bocados' component={HomePage} />
-          <Route path='/front-bocados/shop' component={ShopPage} />
+          <Route path='/front-bocados/shop' render={(rest) => <ShopPage productsCollection={productsCollection} {...rest} />} />
           <Route path='/front-bocados/contact' component={ContactPage} />
           <Route path='/front-bocados/about' component={AboutPage} />
           <Route path='/front-bocados/product' component={ProductPage} />
@@ -40,7 +41,8 @@ function App({ fetchGetProdutcStart, isFeching }) {
 }
 
 const mapstateToProps = createStructuredSelector({
-  isFeching: selectIsFetching
+  isFeching: selectIsFetching,
+  productsCollection: selectProductCollection,
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -5,14 +5,11 @@ export const ShopPageContainer = styled.div`
   grid-template-columns: 25% 62%;
   margin-bottom: 80px;
   @media (max-width: 916px) {
-
     max-width: 1000px;
     margin: auto;
-    grid-template-columns:none;
+    grid-template-columns: none;
     margin-bottom: 50px;
-
   }
-  
 `;
 
 export const ProductsWrapped = styled.div`
@@ -32,9 +29,11 @@ export const ProductsWrapped = styled.div`
 `;
 
 
-
-export const ImagenExample = styled.img`
-  height: 300px;
-  width:100%;
+export const PaginationWrap = styled.div`
+  margin: auto;
+  display: flex;
+  outline: 0;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 80px;
 `;
-
