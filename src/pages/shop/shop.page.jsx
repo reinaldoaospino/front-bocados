@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import CategoryComponent from "../../components/category/category.component";
 import {
@@ -25,6 +25,10 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
             (p) => p.category.toLowerCase() === categoryFilter.toLowerCase()
           );
   }
+
+  useEffect(()=>{
+    setPage(1)
+  },[categoryFilter,setPage])
 
   var max = maxItem;
   var min = 0;

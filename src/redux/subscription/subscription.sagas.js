@@ -21,5 +21,5 @@ export function* fetchCreateSubscriptionStart() {
 
 
 export function* subscriptionSagas() {
-    yield call([call(fetchCreateSubscriptionStart)])
+    yield all([call(fetchCreateSubscriptionStart)])
 }

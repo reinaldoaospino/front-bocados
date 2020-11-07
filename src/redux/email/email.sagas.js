@@ -21,5 +21,5 @@ export function* fetchSendEmailStart() {
 
 
 export function* sendEmailSagas() {
-    yield call([call(fetchSendEmailStart)])
+    yield all([call(fetchSendEmailStart)])
 }
