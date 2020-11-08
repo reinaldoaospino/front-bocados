@@ -20,7 +20,7 @@ const BestProducts = ({ title, productsCollection }) => {
         {productsCollection
           .filter((p) => p.featuredProduct === "True")
           .map((p) => (
-            <ProductCard urlImage={p.imagen} ProducName={p.productName} price={p.price} />
+            <ProductCard id={p.id} urlImage={p.imagen} ProducName={p.productName} price={p.price} />
           ))}
       </ProductsWrap>
     </BestProductsContainer>

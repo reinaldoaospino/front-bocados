@@ -8,7 +8,7 @@ import SugarFreeIcon from "../../components/sugar-free-icon/sugar-free-icon.comp
 import KetoIcon from "../../components/keto-icon/keto-icon.component";
 import ProductsPreview from "../../components/products-preview/products-preview.component";
 import Zoom from "react-reveal/Zoom";
-import BestProductsWithSpinner from "../../components/product-cards-preview/product-cards-preview-with-spinner";
+import BestProducts from "../../components/product-cards-preview/product-cards-preview.component";
 const SugarFree = Award(SugarFreeIcon);
 const GlutenFree = Award(GlutenFreeIcon);
 const NonGmo = Award(NomGomIcon);
@@ -28,7 +28,7 @@ const HomePage = () => {
           </AwardContainer>
         </Zoom>
         <ProductsPreview />
-        <BestProductsWithSpinner title={"Featured Products"} />
+        <BestProducts title={"Featured Products"} />
       </ContentContainer>
     </HomeContainer>
   );

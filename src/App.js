@@ -21,6 +21,7 @@ function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
     fetchGetProdutcStart();
   }, [fetchGetProdutcStart]);
 
+  console.log(isFeching);
   return isFeching ? (
     <SpinnerContainer className="App">
       <CircularProgress />
@@ -33,7 +34,7 @@ function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
           <Route path='/front-bocados/shop' render={(rest) => <ShopPage productsCollection={productsCollection} {...rest} />} />
           <Route path='/front-bocados/contact' component={ContactPage} />
           <Route path='/front-bocados/about' component={AboutPage} />
-          <Route path='/front-bocados/product/:produdctId' component={ProductPage} />
+          <Route path='/front-bocados/product/:productId' component={ProductPage} />
         </Switch>
       </div>
       <Footer />

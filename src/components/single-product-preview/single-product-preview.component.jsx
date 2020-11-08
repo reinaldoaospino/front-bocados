@@ -13,23 +13,25 @@ import {
   CounterWrapped,
 } from "./single-product-preview.styles";
 
-const SingleProductPreview = ({ product }) => (
-  <SingleProductPreviewContainer>
-    <ImgWrapped>
-      <ProductImg src={product.imagen} />
-    </ImgWrapped>
-    <DetailstWrapped>
-      <ProductName>{product.productName}</ProductName>
-      <ProductPrice>{product.price}</ProductPrice>
-      <ProductDetails>{product.description}</ProductDetails>
-      <CounterWrapped>
-        <Counter />
-      </CounterWrapped>
-      <ButtonWrapped>
-        <CustomButton text="Add to Cart" />
-      </ButtonWrapped>
-    </DetailstWrapped>
-  </SingleProductPreviewContainer>
-);
+const SingleProductPreview = ({ product }) => {
+  return (
+    <SingleProductPreviewContainer>
+      <ImgWrapped>
+        <ProductImg src={`data:image/png;base64,${product.imagen}`} />
+      </ImgWrapped>
+      <DetailstWrapped>
+        <ProductName>{product.productName}</ProductName>
+        <ProductPrice>{`$${product.price}`}</ProductPrice>
+        <ProductDetails>{product.description}</ProductDetails>
+        <CounterWrapped>
+          <Counter />
+        </CounterWrapped>
+        <ButtonWrapped>
+          <CustomButton text="Add to Cart" />
+        </ButtonWrapped>
+      </DetailstWrapped>
+    </SingleProductPreviewContainer>
+  );
+};
 
 export default SingleProductPreview;
