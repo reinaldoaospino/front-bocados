@@ -6,6 +6,7 @@ import { selectProductById } from "../../redux/product/product.selector";
 import { connect } from "react-redux";
 
 const ProductPage = ({product}) => {
+  window.scrollTo(0, 0);
   return (
     <ProductPageContainer>
       <SingleProductPreview product={product} />

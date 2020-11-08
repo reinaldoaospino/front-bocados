@@ -16,7 +16,7 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
   const [page, setPage] = useState(1);
   const [maxItem, setMaxItem] = useState(3);
   const [pageValue, setPageValue] = useState(0);
-
+  window.scrollTo(0, 0);
   if (categoryFilter) {
     productsCollection =
       categoryFilter.toLowerCase() === "all"

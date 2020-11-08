@@ -21,7 +21,6 @@ function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
     fetchGetProdutcStart();
   }, [fetchGetProdutcStart]);
 
-  console.log(isFeching);
   return isFeching ? (
     <SpinnerContainer className="App">
       <CircularProgress />
