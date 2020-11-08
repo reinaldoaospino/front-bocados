@@ -2,6 +2,7 @@ import FetchingActionTypes from './fetching.types';
 
 const INITIAL_STATE = {
     isFetching: true,
+    isFetchingForm: false,
     fetchingComplete: false,
     fetchingSuccess: false,
 }
@@ -13,6 +14,11 @@ const FetchingReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 isFetching: action.payload
+            }
+        case FetchingActionTypes.IS_FETCHING_FORM:
+            return {
+                ...state,
+                isFetchingForm: action.payload
             }
         case FetchingActionTypes.FETCHING_SUCCESS:
             return {

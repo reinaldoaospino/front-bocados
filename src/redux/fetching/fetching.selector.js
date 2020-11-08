@@ -7,6 +7,11 @@ export const selectIsFetching= createSelector(
     fetching => fetching.isFetching
 )
 
+export const selectIsFetchingForm= createSelector(
+    [selectFetching],
+    fetching => fetching.isFetchingForm
+)
+
 export const selectFetchingComplete = createSelector(
     [selectFetching],
     fetching => fetching.fetchingComplete

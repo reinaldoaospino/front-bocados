@@ -1,9 +1,13 @@
     import { put } from 'redux-saga/effects';
-import { setFetchingComplete, setFetchingSuccess, setIsFetching } from '../fetching/fetching.action';
+import { setFetchingComplete, setFetchingSuccess, setIsFetching, setIsFetchingForm } from '../fetching/fetching.action';
 
 
 export function* feching() {
     yield put(setIsFetching(true))
+}
+
+export function* fechingForm() {
+    yield put(setIsFetchingForm(true))
 }
 
 export function* fechingComplete() {

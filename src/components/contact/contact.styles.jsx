@@ -20,6 +20,7 @@ export const InputWrapped = styled.div`
 `;
 
 export const ButtonWrapped = styled.div`
+  display: flex;
   margin-bottom: 10px;
   @media (max-width: 1038px) {
     width: 90%;

@@ -1,14 +1,14 @@
 import { takeLatest, put, all, call } from 'redux-saga/effects';
 import EmailActionTypes from './email.types';
 import { fetchSendEmailFailure } from './email.action'
-import { fechingComplete, feching } from '../helpers/fechingHelper';
+import { fechingComplete, fechingForm } from '../helpers/fechingHelper';
 import {SendEmail} from '../../services/email/email-service';
 
-export function* fetchSendEmailAsync() {
+export function* fetchSendEmailAsync({payload}) {
 
     try {
-        yield put(feching());
-        yield SendEmail();
+        yield fechingForm();
+        yield SendEmail(payload);
         yield fechingComplete();
     } catch (error) {
         yield put(fetchSendEmailFailure(error))

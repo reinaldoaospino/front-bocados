@@ -1,7 +1,8 @@
 import EmailActionTypes from './email.types';
 
-export const fetchSendEmailStart = ()=>({
-    type: EmailActionTypes.FETCH_SEND_EMAIL_START
+export const fetchSendEmailStart = (data)=>({
+    type: EmailActionTypes.FETCH_SEND_EMAIL_START,
+    payload: data
 })
 
 export const fetchSendEmailFailure = (errorMessage)=>({

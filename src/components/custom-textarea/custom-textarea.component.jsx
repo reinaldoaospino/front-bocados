@@ -2,7 +2,7 @@ import React from 'react';
 import { TextField } from '@material-ui/core';
 
 
-const CustomTexTarea = ({text})=>(
+const CustomTexTarea = ({text,...rest})=>(
     <TextField
     id="outlined-multiline-static"
     label={text}
@@ -10,6 +10,7 @@ const CustomTexTarea = ({text})=>(
     rows={4}
     variant="outlined"
     fullWidth={true}
+    {...rest}
   />
 )
 

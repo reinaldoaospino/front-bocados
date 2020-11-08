@@ -7,7 +7,7 @@ export const SendEmail = async (emailData) => {
     const data = JSON.stringify({
         "Name": emailData.name,
         "LastName": emailData.lastName,
-        "EmailAddres": emailData.emailAddres,
+        "EmailAddres": emailData.email,
         "Subject": emailData.subject,
         "Message": emailData.message,
     })
