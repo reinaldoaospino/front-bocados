@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { addItem } from "../../redux/cart/cart.action";
 import Counter from "../counter-cart/counter-cart.component";
 import CustomButton from "../custom-button/custom-button.component";
 import {
@@ -13,7 +15,7 @@ import {
   CounterWrapped,
 } from "./single-product-preview.styles";
 
-const SingleProductPreview = ({ product }) => {
+const SingleProductPreview = ({ product, addItem }) => {
   return (
     <SingleProductPreviewContainer>
       <ImgWrapped>
@@ -27,11 +29,15 @@ const SingleProductPreview = ({ product }) => {
           <Counter />
         </CounterWrapped>
         <ButtonWrapped>
-          <CustomButton text="Add to Cart" />
+          <CustomButton text="Add to Cart" onClick={() => addItem(product)} />
         </ButtonWrapped>
       </DetailstWrapped>
     </SingleProductPreviewContainer>
   );
 };
 
-export default SingleProductPreview;
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null,mapDispatchToProps)(SingleProductPreview);
