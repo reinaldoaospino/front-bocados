@@ -6,9 +6,6 @@ import {
   ProductsWrap,
 } from "./product-cards-preview.styles";
 import ProductCard from "../product-card/product-card.component";
-import { selectProductCollection } from "../../redux/product/product.selector";
-import { createStructuredSelector } from "reselect";
-import { connect } from "react-redux";
 
 const BestProducts = ({ title, productsCollection }) => {
   return (
@@ -18,7 +15,6 @@ const BestProducts = ({ title, productsCollection }) => {
       </TitleWrap>
       <ProductsWrap>
         {productsCollection
-          .filter((p) => p.featuredProduct === "True")
           .map((p) => (
             <ProductCard item={p} />
           ))}
@@ -27,8 +23,6 @@ const BestProducts = ({ title, productsCollection }) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  productsCollection: selectProductCollection,
-});
 
-export default connect(mapStateToProps)(BestProducts);
+
+export default BestProducts;

@@ -9,12 +9,15 @@ import KetoIcon from "../../components/keto-icon/keto-icon.component";
 import ProductsPreview from "../../components/products-preview/products-preview.component";
 import Zoom from "react-reveal/Zoom";
 import BestProducts from "../../components/product-cards-preview/product-cards-preview.component";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectProductCollection } from "../../redux/product/product.selector";
 const SugarFree = Award(SugarFreeIcon);
 const GlutenFree = Award(GlutenFreeIcon);
 const NonGmo = Award(NomGomIcon);
 const Keto = Award(KetoIcon);
 
-const HomePage = () => {
+const HomePage = ({ productsCollection }) => {
   return (
     <HomeContainer>
       <ImagesSlider />
@@ -28,12 +31,21 @@ const HomePage = () => {
           </AwardContainer>
         </Zoom>
         <ProductsPreview />
-        <BestProducts title={"Featured Products"} />
+        {
+          <BestProducts
+            title={"Featured Products"}
+            productsCollection={productsCollection.filter(
+              (p) => p.featuredProduct === "True"
+            )}
+          />
+        }
       </ContentContainer>
     </HomeContainer>
   );
 };
 
+const mapStateToProps = createStructuredSelector({
+  productsCollection: selectProductCollection,
+});
 
-
-export default HomePage;
+export default connect(mapStateToProps)(HomePage);

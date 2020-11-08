@@ -49,9 +49,7 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
         <ProductsWrapped>
           {productsCollection.slice(min, max).map((p) => (
             <ProductCard
-              urlImage={p.imagen}
-              ProducName={p.productName}
-              price={p.price}
+            item={p}
               {...rest}
             />
           ))}
