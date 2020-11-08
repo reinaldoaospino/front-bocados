@@ -10,14 +10,20 @@ export function* fechingForm() {
     yield put(setIsFetchingForm(true))
 }
 
-export function* fechingComplete() {
+export function* fechingFormComplete() {
     yield put(setFetchingSuccess(true));
     yield put(setFetchingComplete(true));
+    yield put(setIsFetchingForm(false));
+}
+
+export function* fechingComplete() {
+    yield put(setFetchingSuccess(false));
+    yield put(setFetchingComplete(false));
     yield put(setIsFetching(false));
 }
 
 export function* fechingFailure() {
-    yield put(setIsFetching(false));
+    yield put(setIsFetchingForm(false));
     yield put(setFetchingSuccess(false))
     yield put(setFetchingComplete(true));
 }
