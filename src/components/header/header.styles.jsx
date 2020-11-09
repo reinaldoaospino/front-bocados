@@ -73,7 +73,9 @@ export const LinkOption = styled.div`
   color: black;
 `;
 
-export const CartItems = styled.span``;
+export const CartItems = styled.span`
+cursor: pointer;
+`;
 
 export const ProductName = styled.span`
   font-family: "Sansita Swashed", cursive;
@@ -81,8 +83,10 @@ export const ProductName = styled.span`
 `;
 
 export const MobileCard = styled.div`
-  display: none;
+  display: none; 
   @media (max-width: 916px) {
     display: block;
   }
+ 
+}
 `;

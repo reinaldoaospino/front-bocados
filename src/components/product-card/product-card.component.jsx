@@ -23,13 +23,12 @@ const LinkStyles = {
   color: "black",
 };
 
-const ProductCard = ({ item,addItem }) => {
+const ProductCard = ({ item, addItem }) => {
   console.log(item);
-  const {id, imagen, productName, price} = item;
+  const { id, imagen, productName, price } = item;
   return (
     <Zoom>
-   
-        <ProductImageWrap>
+      <ProductImageWrap>
         <Link to={`/front-bocados/product/${id}`} style={LinkStyles}>
           <ImageWrap>
             <ProductImg src={"data:image/png;base64," + imagen} />
@@ -40,17 +39,17 @@ const ProductCard = ({ item,addItem }) => {
           <PriceWrap>
             <Price>{`$ ${price}`}</Price>
           </PriceWrap>
-          </Link>
-          <OptionsWrap>
-            <ShopOptionWrap>
-              <CustomButton
-                text="Add to cart"
-                icon={<ShopIcon color="white" />}
-                onClick={()=>addItem(item)}
-              />
-            </ShopOptionWrap>
-          </OptionsWrap>
-        </ProductImageWrap>
+        </Link>
+        <OptionsWrap>
+          <ShopOptionWrap>
+            <CustomButton
+              text="Add to cart"
+              icon={<ShopIcon color="white" />}
+              onClick={() => addItem(item)}
+            />
+          </ShopOptionWrap>
+        </OptionsWrap>
+      </ProductImageWrap>
     </Zoom>
   );
 };
