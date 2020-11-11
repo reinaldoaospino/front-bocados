@@ -35,7 +35,7 @@ function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
           <Route path='/front-bocados/contact' component={ContactPage} />
           <Route path='/front-bocados/about' component={AboutPage} />
           <Route path='/front-bocados/product/:productId' component={ProductPage} />
-          <Route path='/front-bocados/checkin' component={CheckInpage} />
+          <Route path='/front-bocados/check-in' component={CheckInpage} />
         </Switch>
       </div>
       <Footer />

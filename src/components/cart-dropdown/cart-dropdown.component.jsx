@@ -25,7 +25,7 @@ const CartDropDown = ({ cartItems, history, dispatch }) => (
     <CustomButton
       text="GO TO CHECKOUT"
       onClick={() => {
-        history.push("/checkout");
+        history.push("/front-bocados/check-in");
         dispatch(toggleCartHidden());
       }}
       height="none"
