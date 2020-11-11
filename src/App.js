@@ -15,6 +15,7 @@ import { selectIsFetching } from './redux/fetching/fetching.selector';
 import { CircularProgress } from '@material-ui/core';
 import { SpinnerContainer } from './App.style.js';
 import { selectProductCollection } from './redux/product/product.selector.js';
+import { CheckInpage } from './pages/check-in/check-in.page.jsx';
 
 function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
           <Route path='/front-bocados/contact' component={ContactPage} />
           <Route path='/front-bocados/about' component={AboutPage} />
           <Route path='/front-bocados/product/:productId' component={ProductPage} />
+          <Route path='/front-bocados/checkin' component={CheckInpage} />
         </Switch>
       </div>
       <Footer />
