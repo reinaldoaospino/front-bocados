@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const CheckInContainer = styled.div`
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
+  margin-bottom: 50px;
 `;
 
 export const ListProductsWrap = styled.div`
@@ -17,3 +18,5 @@ grid-gap: 50px;
 export const ItemWrap = styled.div``;
 
 export const Title = styled.h3``;
+
+export const CustomSpan = styled.span``

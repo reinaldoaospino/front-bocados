@@ -1,25 +1,23 @@
 import React from "react";
-import {
-  CheckInContainer,
-  Title,
-  ItemWrap,
-  ListProductsWrap,
-} from "./check-in.styles";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCartItems } from "../../redux/cart/cart.selectors";
+import CheckInItemsComponent from "../check-in-items/check-in-items.component";
+import { CheckInContainer, Title } from "./check-in.styles";
 
 const CheckInComponent = ({ cartItems }) => {
   return (
     <CheckInContainer>
-      <Title>Selected Products</Title>
-      <ListProductsWrap>
-        <ItemWrap>*</ItemWrap>
-        <ItemWrap>Foto</ItemWrap>
-        <ItemWrap>BUDIN</ItemWrap>
-        <ItemWrap>25$</ItemWrap>
-        <ItemWrap>1</ItemWrap>
-        <ItemWrap>25$</ItemWrap>
-      </ListProductsWrap>
+      <Title>Your Cart</Title>
+      {cartItems.map((c) => (
+        <CheckInItemsComponent item={c} />
+      ))}
     </CheckInContainer>
   );
 };
 
-export default CheckInComponent;
+const mapStateToProps = createStructuredSelector({
+  cartItems: selectCartItems,
+});
+
+export default connect(mapStateToProps)(CheckInComponent);
