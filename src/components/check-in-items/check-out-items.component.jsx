@@ -4,12 +4,12 @@ import {
   ItemWrap,
   CustomSpan,
   ItemImg,
-} from "./check-in-items.styles";
+} from "./check-out-items.styles";
 import ClearIcon from "@material-ui/icons/Clear";
 import { addItem, clearItemFromCart, removeItem } from "../../redux/cart/cart.action";
 import { connect } from "react-redux";
 
-const CheckInItemsComponent = ({ item, clearItemFromCart }) => {
+const CheckOutItemsComponent = ({ item, clearItemFromCart }) => {
   const { productName, price, quantity, imagen } = item;
   return (
     <CheckInItemsWrap>
@@ -34,4 +34,4 @@ const mapDispatchToProps = (dispatch) => ({
   clearItemFromCart: (item) => dispatch(clearItemFromCart(item)),
 });
 
-export default connect(null, mapDispatchToProps)(CheckInItemsComponent);
+export default connect(null, mapDispatchToProps)(CheckOutItemsComponent);
