@@ -9,7 +9,7 @@ export const CheckOutpage = ({ cartItems }) => {
   console.log(cartItems);
   return (
     <CheckOutPageContainer>
-      {cartItems.legth > 0 ? (
+      {cartItems.length > 0 ? (
         <CheckOutComponent cartItems={cartItems} />
       ) : (
         <EmpyCartMessage>Your cart is empy</EmpyCartMessage>

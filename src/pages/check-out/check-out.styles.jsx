@@ -10,6 +10,7 @@ export const CheckOutPageContainer = styled.div`
   @media (max-width: 842px) {
     max-width: 590px;
   }
+  height: 352px;
 `;
 
 
@@ -18,4 +19,6 @@ export const EmpyCartMessage = styled.div`
   text-align:center;
   font-size: 2.5em;
   font-family: 'Cabin';
+  
+  margin-bottom: 455px;
 `
