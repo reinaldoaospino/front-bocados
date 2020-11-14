@@ -24,7 +24,6 @@ const LinkStyles = {
 };
 
 const ProductCard = ({ item, addItem }) => {
-  console.log(item);
   const { id, imagen, productName, price } = item;
   return (
     <Zoom>

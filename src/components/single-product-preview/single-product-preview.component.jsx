@@ -14,30 +14,15 @@ import {
   ButtonWrapped,
   CounterWrapped,
 } from "./single-product-preview.styles";
+import UseSingleProductPreview from "./logic/hook/single-product.preview.hook";
 
 const SingleProductPreview = ({ product, addItem }) => {
-  const [counter, setCounter] = useState(1);
-  const sumCounter = () => {
-    setCounter(counter + 1);
-  };
-
-  const subCounter = () => {
-    if (counter === 1) {
-      return;
-    }
-    setCounter(counter - 1);
-  };
-
-  const addToCart = () => {
-    if (counter > 1) {
-      for (let index = 0; index < counter; index++) {
-        addItem(product);
-      }
-    } else {
-      addItem(product);
-    }
-  };
-
+  const {
+    increseClick,
+    decreseClick,
+    counter,
+    addToCart,
+  } = UseSingleProductPreview();
   return (
     <SingleProductPreviewContainer>
       <ImgWrapped>
@@ -50,12 +35,15 @@ const SingleProductPreview = ({ product, addItem }) => {
         <CounterWrapped>
           <Counter
             counter={counter}
-            sumHandler={sumCounter}
-            subHandler={subCounter}
+            sumHandler={increseClick}
+            subHandler={decreseClick}
           />
         </CounterWrapped>
         <ButtonWrapped>
-          <CustomButton text="Add to Cart" onClick={() => addToCart()} />
+          <CustomButton
+            text="Add to Cart"
+            onClick={() => addToCart(product, addItem)}
+          />
         </ButtonWrapped>
       </DetailstWrapped>
     </SingleProductPreviewContainer>
