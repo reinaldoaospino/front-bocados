@@ -23,6 +23,7 @@ const SingleProductPreview = ({ product, addItem }) => {
     counter,
     addToCart,
   } = UseSingleProductPreview();
+
   return (
     <SingleProductPreviewContainer>
       <ImgWrapped>
