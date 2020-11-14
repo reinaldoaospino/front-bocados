@@ -22,7 +22,7 @@ const SingleProductPreview = ({ product, addItem }) => {
   };
 
   const subCounter = () => {
-    if (counter == 1) {
+    if (counter === 1) {
       return;
     }
     setCounter(counter - 1);
