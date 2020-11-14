@@ -38,8 +38,6 @@ const SingleProductPreview = ({ product, addItem }) => {
     }
   };
 
-  console.log(product);
-
   return (
     <SingleProductPreviewContainer>
       <ImgWrapped>
