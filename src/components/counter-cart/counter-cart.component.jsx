@@ -6,15 +6,15 @@ import {
   OptionCounterWrapped,
 } from "./counter-cart.styles";
 
-const Counter = () => (
+const Counter = ({ counter, sumHandler, subHandler }) => (
   <CounterCartContainer>
-    <OptionWrapped>
+    <OptionWrapped onClick={()=> subHandler()}>
       <Option>-</Option>
     </OptionWrapped>
     <OptionCounterWrapped>
-      <Option>1</Option>
+      <Option>{counter}</Option>
     </OptionCounterWrapped>
-    <OptionWrapped>
+    <OptionWrapped onClick={()=> sumHandler()}>
       <Option>+</Option>
     </OptionWrapped>
   </CounterCartContainer>
