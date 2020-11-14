@@ -3,14 +3,23 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import CheckOutComponent from "../../components/check-out/check-out.component";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
+import { CheckOutPageContainer, EmpyCartMessage } from "./check-out.styles";
 
-export const CheckOutpage = ({cartItems}) => {
-  return <CheckOutComponent cartItems={cartItems}/>;
+export const CheckOutpage = ({ cartItems }) => {
+  console.log(cartItems);
+  return (
+    <CheckOutPageContainer>
+      {cartItems.legth > 0 ? (
+        <CheckOutComponent cartItems={cartItems} />
+      ) : (
+        <EmpyCartMessage>Your cart is empy</EmpyCartMessage>
+      )}
+    </CheckOutPageContainer>
+  );
 };
 
-
 const mapStateToProps = createStructuredSelector({
-    cartItems : selectCartItems
-})
+  cartItems: selectCartItems,
+});
 
 export default connect(mapStateToProps)(CheckOutpage);

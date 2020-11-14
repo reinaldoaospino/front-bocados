@@ -6,15 +6,19 @@ import {
   ItemImg,
 } from "./check-out-items.styles";
 import ClearIcon from "@material-ui/icons/Clear";
-import { addItem, clearItemFromCart, removeItem } from "../../redux/cart/cart.action";
+import {
+  addItem,
+  clearItemFromCart,
+  removeItem,
+} from "../../redux/cart/cart.action";
 import { connect } from "react-redux";
 
 const CheckOutItemsComponent = ({ item, clearItemFromCart }) => {
   const { productName, price, quantity, imagen } = item;
   return (
     <CheckInItemsWrap>
-      <ItemWrap style={{ cursor: "pointer" }} >
-        <ClearIcon onClick={() => clearItemFromCart(item)}/>
+      <ItemWrap style={{ cursor: "pointer" }}>
+        <ClearIcon onClick={() => clearItemFromCart(item)} />
       </ItemWrap>
       <ItemWrap>
         <ItemImg src={"data:image/png;base64," + imagen} />
@@ -22,7 +26,7 @@ const CheckOutItemsComponent = ({ item, clearItemFromCart }) => {
       <ItemWrap>
         <CustomSpan>{productName}</CustomSpan>
       </ItemWrap>
-      <ItemWrap>{price}</ItemWrap>
+      <ItemWrap>{`$${price}`}</ItemWrap>
       <ItemWrap>{quantity}</ItemWrap>
       <ItemWrap>{`$${price * quantity}`}</ItemWrap>
     </CheckInItemsWrap>

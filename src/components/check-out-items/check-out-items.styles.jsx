@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const CheckInItemsWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  max-width: 1000px;
-  margin: auto;
   grid-gap: 50px;
   margin-top: 53px;
+
+  @media (max-width: 680px) {
+    display:none;
+  }
 `;
 
 export const ItemWrap = styled.div`
