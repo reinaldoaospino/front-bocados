@@ -30,7 +30,7 @@ const LinkStyles = {
 const Header = ({ itemCount, hidden,toggleCartHidden }) => {
   return (
     <HeaderContainer>
-      <MobileCard>
+      <MobileCard onClick={() => toggleCartHidden()}>
         <ShopIcon color="black" />
         <CartItems>{`[${itemCount}]`}</CartItems>
       </MobileCard>

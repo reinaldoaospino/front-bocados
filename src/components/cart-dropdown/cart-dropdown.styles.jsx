@@ -14,6 +14,14 @@ export const CartDropDownContainer = styled.div`
   z-index: 5;
   z-index: 5;
   overflow-y: scroll;
+  @media (max-width: 916px) {
+    left: 10px;
+    width:212;
+  }
+
+  @media (max-width: 700px) {
+    width:212px;
+  }
 `;
 
 export const EmpyMessage = styled.span`
