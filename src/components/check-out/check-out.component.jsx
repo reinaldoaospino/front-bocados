@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { selectCartItems } from "../../redux/cart/cart.selectors";
+import { selectCartItems, selectCartTotal } from "../../redux/cart/cart.selectors";
 import CheckOutItemsComponent from "../check-out-items/check-out-items.component";
 import {
   ButtonContainer,
@@ -11,8 +11,9 @@ import {
 } from "./check-out.styles";
 import CustomButton from "../custom-button/custom-button.component";
 import CheckOutItemsMobileComponent from '../check-out-items-mobile/check-out-items-mobile.component';
+import StripeCheckoutButton from '../stripe-button/stripe-button.component';
 
-const CheckInComponent = ({ cartItems }) => {
+const CheckInComponent = ({ cartItems,total }) => {
   return (
     <CheckOutContainer>
       <Title>Your Cart</Title>
@@ -24,7 +25,8 @@ const CheckInComponent = ({ cartItems }) => {
       ))}
       <ButtonContainer>
         <ButtonWrap>
-          <CustomButton text="Pay Now" />
+          <StripeCheckoutButton price={total}/>
+          {/* <CustomButton text="Pay Now" /> */}
         </ButtonWrap>
       </ButtonContainer>
     </CheckOutContainer>
@@ -33,6 +35,7 @@ const CheckInComponent = ({ cartItems }) => {
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
+  total: selectCartTotal
 });
 
 export default connect(mapStateToProps)(CheckInComponent);
