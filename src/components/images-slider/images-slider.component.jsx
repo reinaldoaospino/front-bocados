@@ -15,16 +15,11 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "./images.styles.css";
 
-const slides = [
-  { title: "The best cookies ever", img: UrlImage1 },
-  { title: "You have to taste", img: UrlImage2 },
-  { title: "Is The Best!", img: UrlImage3 },
-];
+const slides = [{ img: UrlImage1 }, { img: UrlImage2 }, { img: UrlImage3 }];
 
 const ImagesSlider = () => {
- 
   return (
-    <Slider>
+    <Slider autoplay={2000}>
       {slides.map((slide, index) => (
         <ImagesWrap key={index}>
           <Imagen1 ImageUrl={slide.img}>
