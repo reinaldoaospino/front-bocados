@@ -10,7 +10,6 @@ export const CheckOutPageContainer = styled.div`
   @media (max-width: 842px) {
     max-width: 590px;
   }
-  height: 352px;
 `;
 
 

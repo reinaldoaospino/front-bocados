@@ -12,7 +12,6 @@ const AboutPage = () => (
         <AboutMessage />
       </AboutWrapped>
     </AboutPageContainer>
-    <Testimony />
   </div>
 
 );

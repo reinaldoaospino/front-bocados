@@ -26,4 +26,5 @@ margin-top: 6px;
 
 export const ItemImgMobile = styled.img`
 height: 110px;
+width: 124px;
 `

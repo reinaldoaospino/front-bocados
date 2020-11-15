@@ -7,7 +7,7 @@ export const CheckInItemsWrap = styled.div`
   margin-top: 53px;
 
   @media (max-width: 680px) {
-    display:none;
+    display: none;
   }
 `;
 
@@ -19,4 +19,5 @@ export const CustomSpan = styled.span``;
 
 export const ItemImg = styled.img`
   height: 123px;
+  width: 139px;
 `;
