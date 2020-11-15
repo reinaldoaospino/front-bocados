@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.action";
 import Counter from "../counter-cart/counter-cart.component";

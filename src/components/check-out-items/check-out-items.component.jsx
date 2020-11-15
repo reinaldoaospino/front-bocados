@@ -6,11 +6,7 @@ import {
   ItemImg,
 } from "./check-out-items.styles";
 import ClearIcon from "@material-ui/icons/Clear";
-import {
-  addItem,
-  clearItemFromCart,
-  removeItem,
-} from "../../redux/cart/cart.action";
+import { addItem, clearItemFromCart } from "../../redux/cart/cart.action";
 import { connect } from "react-redux";
 
 const CheckOutItemsComponent = ({ item, clearItemFromCart }) => {
