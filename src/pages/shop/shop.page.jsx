@@ -17,16 +17,17 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
             (p) => p.category.toLowerCase() === categoryFilter.toLowerCase()
           );
   }
-
   return (
     <div>
       <ShopPageContainer>
         <CategoryButton />
         <CategoryComponent />
         <ProductsWrapped>
-          {productsCollection.map((p) => (
-            <ProductCard item={p} {...rest} />
-          ))}
+          {productsCollection.length > 0 ? (
+            productsCollection.map((p) => <ProductCard item={p} {...rest} />)
+          ) : (
+            <p>No hay productos con la categoria {categoryFilter}</p>
+          )}
         </ProductsWrapped>
       </ShopPageContainer>
     </div>

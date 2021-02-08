@@ -9,7 +9,6 @@ import {
   CheckInContainer as CheckOutContainer,
   Title,
 } from "./check-out.styles";
-import CustomButton from "../custom-button/custom-button.component";
 import CheckOutItemsMobileComponent from '../check-out-items-mobile/check-out-items-mobile.component';
 import StripeCheckoutButton from '../stripe-button/stripe-button.component';
 
