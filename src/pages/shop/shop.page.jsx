@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { ProductsWrapped, ShopPageContainer } from "./shop.styles";
+import {
+  NotProductMessage,
+  ProductsWrapped,
+  ShopPageContainer,
+} from "./shop.styles";
 import CategoryComponent from "../../components/category/category.component";
 import ProductCard from "../../components/product-card/product-card.component";
 import CategoryButton from "../../components/category-button/category-button.component";
@@ -26,7 +30,9 @@ const ShopPage = ({ productsCollection, categoryFilter, ...rest }) => {
           {productsCollection.length > 0 ? (
             productsCollection.map((p) => <ProductCard item={p} {...rest} />)
           ) : (
-            <p>No hay productos con la categoria {categoryFilter}</p>
+            <NotProductMessage>
+             Sorry, there is not products for {categoryFilter} category
+            </NotProductMessage>
           )}
         </ProductsWrapped>
       </ShopPageContainer>

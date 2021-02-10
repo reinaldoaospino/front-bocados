@@ -4,6 +4,9 @@ export const FooterContainer = styled.div`
   display: grid;
   height: 285px;
   grid-template-columns: 50% 25% 25%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background: linear-gradient(
     90deg,
     rgba(234, 233, 233, 1) 0%,
