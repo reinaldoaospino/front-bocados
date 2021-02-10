@@ -14,10 +14,16 @@ import UrlImage3 from "../../assets/princial_img_3.png";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "./images.styles.css";
+import { useHistory } from "react-router-dom";
 
 const slides = [{ img: UrlImage1 }, { img: UrlImage2 }, { img: UrlImage3 }];
 
 const ImagesSlider = () => {
+  const history = useHistory();
+
+  const redirect=()=>{
+    history.push("/shop")
+  }
   return (
     <Slider autoplay={2000}>
       {slides.map((slide, index) => (
@@ -25,7 +31,7 @@ const ImagesSlider = () => {
           <Imagen1 ImageUrl={slide.img}>
             <ButtonWrap>
               <ButtonWrapeer>
-                <CustomButton text="More" />
+                <CustomButton text="More" onClick={redirect} />
               </ButtonWrapeer>
             </ButtonWrap>
           </Imagen1>

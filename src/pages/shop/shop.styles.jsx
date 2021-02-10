@@ -28,7 +28,6 @@ export const ProductsWrapped = styled.div`
   }
 `;
 
-
 export const PaginationWrap = styled.div`
   margin: auto;
   display: flex;
@@ -36,4 +35,13 @@ export const PaginationWrap = styled.div`
   position: relative;
   justify-content: center;
   margin-bottom: 80px;
+`;
+
+export const NotProductMessage = styled.h1`
+  margin-top: 150px;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Cabin";
+  grid-column: span 3;
+  font-weight: normal
 `;

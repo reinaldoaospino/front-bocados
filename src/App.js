@@ -20,13 +20,13 @@ import CheckOutpage from './pages/check-out/check-out.page.jsx';
 function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
   useEffect(() => {
     fetchGetProdutcStart();
-  }, [fetchGetProdutcStart]);
+  }, [ fetchGetProdutcStart ]);
 
   return isFeching ? (
     <SpinnerContainer className="App">
       <CircularProgress />
     </SpinnerContainer>
-  ) : <div>
+  ) : <div style={{ position: 'relative' }} >
       <Header />
       <div className="content">
         <Switch>
