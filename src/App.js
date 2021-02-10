@@ -30,12 +30,12 @@ function App({ fetchGetProdutcStart, isFeching, productsCollection }) {
       <Header />
       <div className="content">
         <Switch>
-          <Route exact path='/front-bocados' component={HomePage} />
-          <Route path='/front-bocados/shop' render={(rest) => <ShopPage productsCollection={productsCollection} {...rest} />} />
-          <Route path='/front-bocados/contact' component={ContactPage} />
-          <Route path='/front-bocados/about' component={AboutPage} />
-          <Route path='/front-bocados/product/:productId' component={ProductPage} />
-          <Route path='/front-bocados/check-in' component={CheckOutpage} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' render={(rest) => <ShopPage productsCollection={productsCollection} {...rest} />} />
+          <Route path='/contact' component={ContactPage} />
+          <Route path='/about' component={AboutPage} />
+          <Route path='/product/:productId' component={ProductPage} />
+          <Route path='/check-in' component={CheckOutpage} />
         </Switch>
       </div>
       <Footer />

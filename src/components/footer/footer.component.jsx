@@ -41,19 +41,19 @@ const Footer = () => (
       <Title>Menu</Title>
       <SpanItem>
         {" "}
-        <Link style={LinkStyles} to="/front-bocados/shop">Shop</Link>
+        <Link style={LinkStyles} to="/shop">Shop</Link>
       </SpanItem>
       <SpanItem>
         {" "}
-        <Link style={LinkStyles} to="/front-bocados/contact" >Contact</Link>{" "}
+        <Link style={LinkStyles} to="/contact" >Contact</Link>{" "}
       </SpanItem>
       <SpanItem>
         {" "}
-        <Link style={LinkStyles} to="/front-bocados/about">About</Link>{" "}
+        <Link style={LinkStyles} to="/about">About</Link>{" "}
       </SpanItem>
       <SpanItem>
         {" "}
-        <Link style={LinkStyles} to="/front-bocados/product">Product</Link>{" "}
+        <Link style={LinkStyles} to="/product">Product</Link>{" "}
       </SpanItem>
     </MenuWrapped>
 

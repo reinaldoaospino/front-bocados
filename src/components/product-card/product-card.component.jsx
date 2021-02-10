@@ -28,7 +28,7 @@ const ProductCard = ({ item, addItem }) => {
   return (
     <Zoom>
       <ProductImageWrap>
-        <Link to={`/front-bocados/product/${id}`} style={LinkStyles}>
+        <Link to={`/product/${id}`} style={LinkStyles}>
           <ImageWrap>
             <ProductImg src={"data:image/png;base64," + imagen} />
           </ImageWrap>

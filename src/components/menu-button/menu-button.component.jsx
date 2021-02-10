@@ -17,9 +17,9 @@ const ButtonMenu = () => {
 
   const linkClick = (option) => {
     if(option.includes("home")){
-      history.push(`/front-bocados/`);
+      history.push(`/`);
     }else{
-      history.push(`/front-bocados/${option}`);
+      history.push(`/${option}`);
     }
    
     setAnchorEl(null);

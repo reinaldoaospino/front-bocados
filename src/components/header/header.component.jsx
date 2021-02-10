@@ -35,7 +35,7 @@ const Header = ({ itemCount, hidden,toggleCartHidden }) => {
         <CartItems>{`[${itemCount}]`}</CartItems>
       </MobileCard>
       <LogoWrap>
-        <Link to="/front-bocados">
+        <Link to="/">
           <Logo ImageUrl={LogoHeader} />
         </Link>
       </LogoWrap>
@@ -43,22 +43,22 @@ const Header = ({ itemCount, hidden,toggleCartHidden }) => {
         <ButtonMenu />
         <MenuUl>
           <MenuLI>
-            <Link style={LinkStyles} to="/front-bocados">
+            <Link style={LinkStyles} to="/">
               <LinkOption>Home</LinkOption>
             </Link>
           </MenuLI>
           <MenuLI>
-            <Link style={LinkStyles} to="/front-bocados/shop">
+            <Link style={LinkStyles} to="/shop">
               <LinkOption>Shop</LinkOption>
             </Link>
           </MenuLI>
           <MenuLI>
-            <Link style={LinkStyles} to="/front-bocados/contact">
+            <Link style={LinkStyles} to="/contact">
               <LinkOption>Contact</LinkOption>
             </Link>
           </MenuLI>
           <MenuLI>
-            <Link style={LinkStyles} to="/front-bocados/about">
+            <Link style={LinkStyles} to="/about">
               <LinkOption>About</LinkOption>
             </Link>
           </MenuLI>
