@@ -3,9 +3,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Poppins", Arial, sans-serif;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.content{
+  padding-bottom: 500px;
 }
