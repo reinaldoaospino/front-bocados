@@ -21,9 +21,9 @@ const slides = [{ img: UrlImage1 }, { img: UrlImage2 }, { img: UrlImage3 }];
 const ImagesSlider = () => {
   const history = useHistory();
 
-  const redirect=()=>{
-    history.push("/shop")
-  }
+  const redirect = () => {
+    history.push("/shop");
+  };
   return (
     <Slider autoplay={2000}>
       {slides.map((slide, index) => (
