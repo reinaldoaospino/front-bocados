@@ -22,14 +22,16 @@ const CartDropDown = ({ cartItems, history, dispatch }) => (
         <EmpyMessage className="empty-message">You cart is empy</EmpyMessage>
       )}
     </CartItems>
-    <CustomButton
-      text="GO TO CHECKOUT"
-      onClick={() => {
-        history.push("/check-in");
-        dispatch(toggleCartHidden());
-      }}
-      height="none"
-    ></CustomButton>
+    {cartItems.length ? (
+      <CustomButton
+        text="GO TO CHECKOUT"
+        onClick={() => {
+          history.push("/check-in");
+          dispatch(toggleCartHidden());
+        }}
+        height="none"
+      ></CustomButton>
+    ) : null}
   </CartDropDownContainer>
 );
 
