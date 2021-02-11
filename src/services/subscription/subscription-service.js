@@ -5,7 +5,7 @@ export const CreateSubscription = async (subscriptionData) => {
     var tokenTask = GetToken();
 
     const data = JSON.stringify({
-        "Email": subscriptionData.email,
+        "Email": subscriptionData,
     })
 
     var token = await tokenTask;

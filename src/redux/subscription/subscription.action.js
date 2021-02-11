@@ -1,10 +1,11 @@
 import SubscriptionActionTypes from './subscription.types';
 
-export const fetCreateSubscriptionStart = ()=>({
-    type: SubscriptionActionTypes.FETCH_CREATE_SUBSCRIPTION_START
+export const fetchCreateSubscriptionStart = (data)=>({
+    type: SubscriptionActionTypes.FETCH_CREATE_SUBSCRIPTION_START,
+    payload: data
 })
 
-export const fetCreateSubscriptionFailure = (errorMessage)=>({
+export const fetchCreateSubscriptionFailure = (errorMessage)=>({
     type: SubscriptionActionTypes.FETCH_CREATE_SUBSCRIPTION_FAILURE,
     payload: errorMessage
 })

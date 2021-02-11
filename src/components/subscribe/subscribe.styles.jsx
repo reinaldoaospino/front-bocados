@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SubscribeContainer = styled.div`
+export const SubscribeForm = styled.form`
   display: flex;
   @media (max-width: 916px) {
     margin:auto;
