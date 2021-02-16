@@ -93,6 +93,7 @@ const Contact = ({
             id={"email"}
             name={"email"}
             disabled={isFetchingForm}
+            type={"email"}
           />
         </InputWrapped>
         <InputWrapped>

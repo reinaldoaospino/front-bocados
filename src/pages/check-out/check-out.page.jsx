@@ -6,6 +6,7 @@ import { selectCartItems } from "../../redux/cart/cart.selectors";
 import { CheckOutPageContainer, EmpyCartMessage } from "./check-out.styles";
 
 export const CheckOutpage = ({ cartItems }) => {
+  window.scrollTo(0, 0);
   return (
     <CheckOutPageContainer>
       {cartItems.length > 0 ? (

@@ -18,6 +18,8 @@ const NonGmo = Award(NomGomIcon);
 const Keto = Award(KetoIcon);
 
 const HomePage = ({ productsCollection }) => {
+  window.scrollTo(0, 0);
+
   return (
     <HomeContainer>
       <ImagesSlider />

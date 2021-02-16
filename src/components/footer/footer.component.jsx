@@ -28,7 +28,7 @@ const Footer = () => (
   <FooterContainer>
     <SocialMediaWrapped>
       <InstagramWrapped>
-        <InstagramIcon urlAccount={"https://www.instagram.com/bocados.nj/"} />
+        <InstagramIcon urlAccount={"https://www.instagram.com/bocados.fl/"} />
       </InstagramWrapped>
       <WhatsAppWrapped>
         <WhatsAppIcon
@@ -50,10 +50,6 @@ const Footer = () => (
       <SpanItem>
         {" "}
         <Link style={LinkStyles} to="/about">About</Link>{" "}
-      </SpanItem>
-      <SpanItem>
-        {" "}
-        <Link style={LinkStyles} to="/product">Product</Link>{" "}
       </SpanItem>
     </MenuWrapped>
 

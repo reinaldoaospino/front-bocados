@@ -6,17 +6,21 @@ import {
   ContactImg,
   ContactWrapped,
 } from "./contact.styles";
-import ContactImgen from '../../assets/contact_img.PNG'
+import ContactImgen from "../../assets/contact_img.PNG";
 
-const ContactPage = () => (
-  <ContactPageContainer>
-    <ContactPageWrapped>
-      <ContactImg src={ContactImgen}/>
-      <ContactWrapped>
-        <Contact />
-      </ContactWrapped>
-    </ContactPageWrapped>
-  </ContactPageContainer>
-);
+const ContactPage = () => {
+  window.scrollTo(0, 0);
+
+  return (
+    <ContactPageContainer>
+      <ContactPageWrapped>
+        <ContactImg src={ContactImgen} />
+        <ContactWrapped>
+          <Contact />
+        </ContactWrapped>
+      </ContactPageWrapped>
+    </ContactPageContainer>
+  );
+};
 
 export default ContactPage;

@@ -75,6 +75,7 @@ const Subscribe = ({
             onChange={handleChange}
             id={"email"}
             disabled={isFetchingForm}
+            type={"email"}
           />
         </InputWrapped>
         <ButtonWrapped>
