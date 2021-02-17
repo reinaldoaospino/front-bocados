@@ -8,13 +8,13 @@ import {
 
 const Counter = ({ counter, sumHandler, subHandler }) => (
   <CounterCartContainer>
-    <OptionWrapped onClick={()=> subHandler()}>
+    <OptionWrapped onClick={() => subHandler()}>
       <Option>-</Option>
     </OptionWrapped>
     <OptionCounterWrapped>
       <Option>{counter}</Option>
     </OptionCounterWrapped>
-    <OptionWrapped onClick={()=> sumHandler()}>
+    <OptionWrapped onClick={() => sumHandler()}>
       <Option>+</Option>
     </OptionWrapped>
   </CounterCartContainer>

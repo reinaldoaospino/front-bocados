@@ -10,12 +10,20 @@ const OptionStyles = css`
   &:hover {
     cursor: pointer;
   }
+  @media (max-width: 810px) {
+    height: 18px;
+    width:15px;
+    padding:5px;
+  }
 `;
 
 export const CounterCartContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  @media (max-width: 810px) {
+    display: flex;
+  }
 `;
 
 export const OptionWrapped = styled.div`
@@ -25,6 +33,10 @@ export const OptionWrapped = styled.div`
 export const OptionCounterWrapped = styled.div`
   ${OptionStyles}
   width: 144px;
+  @media (max-width: 810px) {
+    width: 110px;
+    padding:5px;
+  }
 `;
 export const Option = styled.span`
   font-size: 1.1em;

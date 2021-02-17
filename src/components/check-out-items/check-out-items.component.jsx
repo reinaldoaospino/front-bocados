@@ -6,11 +6,23 @@ import {
   ItemImg,
 } from "./check-out-items.styles";
 import ClearIcon from "@material-ui/icons/Clear";
-import { addItem, clearItemFromCart } from "../../redux/cart/cart.action";
+import {
+  addItem,
+  clearItemFromCart,
+  removeItem,
+} from "../../redux/cart/cart.action";
 import { connect } from "react-redux";
+import Counter from "../counter-cart/counter-cart.component";
+import UseCheckOutItems from "./logic/hooks/check-out-items.hook";
 
-const CheckOutItemsComponent = ({ item, clearItemFromCart }) => {
+const CheckOutItemsComponent = ({ item, clearItemFromCart, addItem,removeItem }) => {
   const { productName, price, quantity, imagen } = item;
+  const { increseClick, decreseClick, counter, addToCart } = UseCheckOutItems(
+    quantity,
+    item,
+    addItem,
+    removeItem
+  );
   return (
     <CheckInItemsWrap>
       <ItemWrap style={{ cursor: "pointer" }}>
@@ -23,14 +35,24 @@ const CheckOutItemsComponent = ({ item, clearItemFromCart }) => {
         <CustomSpan>{productName}</CustomSpan>
       </ItemWrap>
       <ItemWrap>{`$${price}`}</ItemWrap>
-      <ItemWrap>{quantity}</ItemWrap>
-      <ItemWrap>{`$${price * quantity}`}</ItemWrap>
+      <ItemWrap>
+      <ItemWrap>
+      <Counter
+        counter={counter}
+        sumHandler={increseClick}
+        subHandler={decreseClick}
+      />
+      </ItemWrap>
+
+      </ItemWrap>
+      <ItemWrap>{`$${price * counter}`}</ItemWrap>
     </CheckInItemsWrap>
   );
 };
 
 const mapDispatchToProps = (dispatch) => ({
   addItem: (item) => dispatch(addItem(item)),
+  removeItem: (item) => dispatch(removeItem(item)),
   clearItemFromCart: (item) => dispatch(clearItemFromCart(item)),
 });
 

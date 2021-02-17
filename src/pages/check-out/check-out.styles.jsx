@@ -7,9 +7,7 @@ export const CheckOutPageContainer = styled.div`
     max-width: 800px;
   }
 
-  @media (max-width: 842px) {
-    max-width: 590px;
-  }
+
 `;
 
 

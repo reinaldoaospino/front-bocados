@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const CheckItemsMobileWrap = styled.div`
   display: none;
-
-  @media (max-width: 680px) {
+  box-shadow: 1px 10px 4px 0px rgba(207,190,190,0.75);
+  @media (max-width: 810px) {
     display: grid;
     grid-template-columns: 26% 37% 33%;
     margin-top: 53px;

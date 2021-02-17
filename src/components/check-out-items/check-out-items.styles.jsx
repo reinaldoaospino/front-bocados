@@ -5,8 +5,9 @@ export const CheckInItemsWrap = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 50px;
   margin-top: 53px;
+  box-shadow: 1px 10px 4px 0px rgba(207,190,190,0.75);
 
-  @media (max-width: 680px) {
+  @media (max-width: 810px) {
     display: none;
   }
 `;

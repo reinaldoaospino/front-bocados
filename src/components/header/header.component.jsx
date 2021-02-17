@@ -13,7 +13,7 @@ import {
 } from "./header.styles";
 import LogoHeader from "../../assets/logoHeader.svg";
 import ShopIcon from "../shop-icon/shop-icon.component";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import {
   selectCartHidden,
@@ -27,7 +27,17 @@ const LinkStyles = {
   textDecoration: "none",
 };
 
-const Header = ({ itemCount, hidden,toggleCartHidden }) => {
+const Header = ({ itemCount, hidden, toggleCartHidden }) => {
+  const history = useHistory();
+
+  const logoClick = () => {
+    if (history.location.pathname === "/") {
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    history.push("/");
+  };
   return (
     <HeaderContainer>
       <MobileCard onClick={() => toggleCartHidden()}>
@@ -35,7 +45,7 @@ const Header = ({ itemCount, hidden,toggleCartHidden }) => {
         <CartItems>{`[${itemCount}]`}</CartItems>
       </MobileCard>
       <LogoWrap>
-        <Link to="/">
+        <Link onClick={() => logoClick()}>
           <Logo ImageUrl={LogoHeader} />
         </Link>
       </LogoWrap>

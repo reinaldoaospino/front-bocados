@@ -1,6 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addItem, clearItemFromCart } from "../../redux/cart/cart.action";
+import {
+  addItem,
+  clearItemFromCart,
+  removeItem,
+} from "../../redux/cart/cart.action";
 import {
   CheckItemsMobileWrap,
   ItemDetail,
@@ -9,9 +13,22 @@ import {
   ItemMobileWrap,
 } from "./check-out-items-mobile.styles";
 import ClearIcon from "@material-ui/icons/Clear";
+import UseCheckOutItems from "../check-out-items/logic/hooks/check-out-items.hook";
+import Counter from "../counter-cart/counter-cart.component";
 
-const CheckOutItemsMobileComponent = ({ item, clearItemFromCart }) => {
+const CheckOutItemsMobileComponent = ({
+  item,
+  clearItemFromCart,
+  addItem,
+  removeItem,
+}) => {
   const { productName, price, quantity, imagen } = item;
+  const { increseClick, decreseClick, counter, addToCart } = UseCheckOutItems(
+    quantity,
+    item,
+    addItem,
+    removeItem
+  );
   return (
     <CheckItemsMobileWrap>
       <ItemMobileWrap style={{ cursor: "pointer" }}>
@@ -26,6 +43,12 @@ const CheckOutItemsMobileComponent = ({ item, clearItemFromCart }) => {
           <ItemDetail>{`$${price} X ${quantity} = $${
             price * quantity
           }`}</ItemDetail>
+          <ItemDetail>Change quantity:</ItemDetail>
+          <Counter
+            counter={counter}
+            sumHandler={increseClick}
+            subHandler={decreseClick}
+          />
         </ItemDetailsWrap>
       </ItemMobileWrap>
     </CheckItemsMobileWrap>
@@ -34,6 +57,7 @@ const CheckOutItemsMobileComponent = ({ item, clearItemFromCart }) => {
 
 const mapDispatchToProps = (dispatch) => ({
   addItem: (item) => dispatch(addItem(item)),
+  removeItem: (item) => dispatch(removeItem(item)),
   clearItemFromCart: (item) => dispatch(clearItemFromCart(item)),
 });
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CheckInContainer = styled.div`
   margin-top: 150px;
   text-align: center;
+
 `;
 export const ItemWrap = styled.div``;
 
