@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: 'https://api-bocados.azurewebsites.net',
+    baseURL: 'https://localhost:44381',
     headers:{
         'Content-Type': 'application/json',
     }

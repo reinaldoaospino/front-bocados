@@ -1,11 +1,11 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
-import axios from "axios";
 import Logo from "../../assets/logo.png";
 import "./stripe-button.styles.css";
 import { clearCart } from "../../redux/cart/cart.action";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { CreatePayment } from "../../services/stripe/stripe-service";
 
 const StripeCheckoutButton = ({ price, clearCart }) => {
   const priceForStripe = price * 100;
@@ -14,26 +14,26 @@ const StripeCheckoutButton = ({ price, clearCart }) => {
 
   const history = useHistory();
 
+
+
   const onToken = (token) => {
-    alert("Payment successful");
-    clearCart();
-    history.push("");
-    // axios({
-    //   url: "payment",
-    //   method: "post",
-    //   data: {
-    //     amount: priceForStripe,
-    //     token,
-    //   },
-    // })
-    //   .then((response) => {
-    //     console.log('exitoso')
-    //     alert("Payment successful");
-    //   })
-    //   .catch((error) => {
-    //     console.log("Payment error:", JSON.parse(error));
-    //     alert("There was a issue with your payment. Check de credit cart.");
-    //   });
+    console.log(token)
+    const paymentoObject = {
+      source: token.id,
+      amount: priceForStripe,
+    };
+
+    CreatePayment(paymentoObject)
+      .then((response) => {
+        alert("Payment successful");
+        clearCart();
+        history.push("");
+      })
+      .catch((err) => {
+        alert('Error');
+
+        console.log(err)
+      });
   };
 
   return (

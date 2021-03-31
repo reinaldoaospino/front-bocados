@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const CheckInContainer = styled.div`
   margin-top: 150px;
   text-align: center;
-
 `;
 export const ItemWrap = styled.div``;
 
@@ -18,9 +17,8 @@ export const ButtonContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   @media (max-width: 680px) {
-    display:block 
+    display: block;
   }
-
 `;
 
 export const ButtonWrap = styled.div`
@@ -28,6 +26,17 @@ export const ButtonWrap = styled.div`
   margin: 40px auto;
   grid-column: 5 / span 2;
   @media (max-width: 680px) {
-    width:50%;
+    width: 50%;
   }
+`;
+
+export const TotalWrap = styled.div`
+  margin-top: 20px;
+  text-align: right;
+`;
+
+export const TotalSpan = styled.span`
+  margin-right: 23px;
+  font-size: 1.5em;
+  font-family: "Cabin";
 `;
